@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Turno" representedClassName=".Turno" syncable="YES">
+        <attribute name="colorTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="finTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inicioTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombreTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ordenTurno" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Turno" positionX="-63" positionY="-18" width="128" height="135"/>
+    </elements>
+</model>
