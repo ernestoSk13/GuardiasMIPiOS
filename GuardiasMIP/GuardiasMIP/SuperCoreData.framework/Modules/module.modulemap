@@ -1,0 +1,6 @@
+framework module SuperCoreData {
+  umbrella header "SuperCoreData.h"
+
+  export *
+  module * { export * }
+}

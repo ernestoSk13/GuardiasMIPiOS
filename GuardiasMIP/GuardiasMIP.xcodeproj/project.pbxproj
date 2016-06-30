@@ -13,6 +13,11 @@
 		0E0EB5631D238BD7000B5C0D /* Turno+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5611D238BD7000B5C0D /* Turno+CoreDataProperties.swift */; };
 		0E0EB5641D238BD7000B5C0D /* Turno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5621D238BD7000B5C0D /* Turno.swift */; };
 		0E0EB5661D238D49000B5C0D /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5651D238D49000B5C0D /* MenuButton.swift */; };
+		0E0EB5691D24CA69000B5C0D /* SuperCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB5671D24CA5F000B5C0D /* SuperCoreData.framework */; };
+		0E0EB56A1D24CA69000B5C0D /* SuperCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB5671D24CA5F000B5C0D /* SuperCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB56B1D24CA73000B5C0D /* CoreData.framework */; };
+		0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */; };
+		0E0EB5701D24D442000B5C0D /* TurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56F1D24D442000B5C0D /* TurnView.swift */; };
 		0E8CF1181D20D77200B788BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF1171D20D77200B788BA /* AppDelegate.swift */; };
 		0E8CF11A1D20D77200B788BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF1191D20D77200B788BA /* ViewController.swift */; };
 		0E8CF11D1D20D77200B788BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CF11B1D20D77200B788BA /* Main.storyboard */; };
@@ -49,6 +54,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0E0EB5591D2382FA000B5C0D /* EasyPickerKit.framework in Embed Frameworks */,
+				0E0EB56A1D24CA69000B5C0D /* SuperCoreData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +67,10 @@
 		0E0EB5611D238BD7000B5C0D /* Turno+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Turno+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0E0EB5621D238BD7000B5C0D /* Turno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turno.swift; sourceTree = "<group>"; };
 		0E0EB5651D238D49000B5C0D /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		0E0EB5671D24CA5F000B5C0D /* SuperCoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SuperCoreData.framework; sourceTree = "<group>"; };
+		0E0EB56B1D24CA73000B5C0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCreacionTurnosViewController.swift; sourceTree = "<group>"; };
+		0E0EB56F1D24D442000B5C0D /* TurnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnView.swift; sourceTree = "<group>"; };
 		0E8CF1141D20D77200B788BA /* GuardiasMIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardiasMIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CF1171D20D77200B788BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8CF1191D20D77200B788BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */,
+				0E0EB5691D24CA69000B5C0D /* SuperCoreData.framework in Frameworks */,
 				0E0EB5581D2382FA000B5C0D /* EasyPickerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +121,7 @@
 			children = (
 				0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */,
 				0E0EB5651D238D49000B5C0D /* MenuButton.swift */,
+				0E0EB56F1D24D442000B5C0D /* TurnView.swift */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -139,6 +152,7 @@
 				0E0EB55A1D2383F6000B5C0D /* Lib */,
 				0E8CF1171D20D77200B788BA /* AppDelegate.swift */,
 				0E8CF1191D20D77200B788BA /* ViewController.swift */,
+				0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */,
 				0E8CF11B1D20D77200B788BA /* Main.storyboard */,
 				0E8CF1211D20D77200B788BA /* Assets.xcassets */,
 				0E8CF1231D20D77200B788BA /* LaunchScreen.storyboard */,
@@ -173,6 +187,8 @@
 		0E8CF14C1D20E2BD00B788BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E0EB56B1D24CA73000B5C0D /* CoreData.framework */,
+				0E0EB5671D24CA5F000B5C0D /* SuperCoreData.framework */,
 				0E0EB5561D2382F0000B5C0D /* EasyPickerKit.framework */,
 			);
 			name = Frameworks;
@@ -318,6 +334,8 @@
 				0E0EB55C1D2384B6000B5C0D /* DateUtilities.swift in Sources */,
 				0E0EB5631D238BD7000B5C0D /* Turno+CoreDataProperties.swift in Sources */,
 				0E8CF1491D20D8E800B788BA /* BlurredView.swift in Sources */,
+				0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */,
+				0E0EB5701D24D442000B5C0D /* TurnView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8g5-sT-Vto">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="358"/>
         </scene>
-        <!--View Controller-->
+        <!--Creacion Turnos View Controller-->
         <scene sceneID="V8c-hj-FG4">
             <objects>
-                <viewController id="8g5-sT-Vto" sceneMemberID="viewController">
+                <viewController id="8g5-sT-Vto" customClass="GMCreacionTurnosViewController" customModule="GuardiasMIP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WES-M5-Lr1"/>
                         <viewControllerLayoutGuide type="bottom" id="d4S-td-59J"/>
@@ -97,64 +97,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elige la cantidad de turnos y asigna un nombre corto a cada uno" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2u-rg-haM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elige la cantidad de turnos y asigna una letra a cada uno" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2u-rg-haM">
                                 <rect key="frame" x="20" y="20" width="560" height="92"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Turno:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fv-87-GEr">
-                                <rect key="frame" x="122" y="174" width="68" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weG-7r-FH0" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="369" y="225" width="110" height="30"/>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weG-7r-FH0" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
+                                <rect key="frame" x="328" y="237" width="110" height="30"/>
                                 <state key="normal" title="Borrar">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleteTurn:" destination="8g5-sT-Vto" eventType="touchUpInside" id="hkK-02-sJF"/>
+                                </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="K4H-bZ-Vqu">
-                                <rect key="frame" x="20" y="298" width="560" height="282"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="99" id="j8u-b7-cnJ">
-                                        <rect key="frame" x="0.0" y="28" width="560" height="99"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j8u-b7-cnJ" id="20a-PX-M71">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="98.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Oe-wl-RbA">
-                                                    <rect key="frame" x="13" y="20" width="70" height="58"/>
-                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </view>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="*Para editar un turno simplemente da tap sobre la celda correspondiente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-gS-X2Y">
-                                <rect key="frame" x="20" y="120" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="*Para editar un turno simplemente da tap sobre la vista correspondiente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-gS-X2Y">
+                                <rect key="frame" x="20" y="120" width="560" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-rJ-fE2">
-                                <rect key="frame" x="203" y="177" width="276" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYg-4J-abU" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="203" y="225" width="110" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYg-4J-abU" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
+                                <rect key="frame" x="162" y="237" width="110" height="30"/>
                                 <state key="normal" title="Añadir">
                                     <color key="titleColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addTurn:" destination="8g5-sT-Vto" eventType="touchUpInside" id="esw-7e-ij0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de Turno (ej: A)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-rJ-fE2">
+                                <rect key="frame" x="162" y="186" width="276" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="9he-N0-b7E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuM-o3-3eW">
+                                <rect key="frame" x="466" y="186" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="33w-MV-OxD"/>
+                                    <constraint firstAttribute="width" constant="30" id="3QX-Am-HFG"/>
+                                </constraints>
+                                <state key="normal" image="swap">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteTurn:" destination="8g5-sT-Vto" eventType="touchUpInside" id="W9H-Qd-ROs"/>
+                                    <action selector="swapTurn:" destination="8g5-sT-Vto" eventType="touchUpInside" id="etf-xB-fec"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sJa-gS-X2Y" firstAttribute="leading" secondItem="rkZ-Ee-fjX" secondAttribute="leadingMargin" id="0Lz-UY-EAt"/>
+                            <constraint firstItem="hYg-4J-abU" firstAttribute="top" secondItem="ftc-rJ-fE2" secondAttribute="bottom" constant="21" id="0ap-W7-NkN"/>
+                            <constraint firstItem="ftc-rJ-fE2" firstAttribute="top" secondItem="sJa-gS-X2Y" secondAttribute="bottom" constant="20" id="2ke-ic-8Re"/>
+                            <constraint firstItem="fuM-o3-3eW" firstAttribute="top" secondItem="ftc-rJ-fE2" secondAttribute="top" id="AhH-fy-4d4"/>
+                            <constraint firstItem="j2u-rg-haM" firstAttribute="trailing" secondItem="rkZ-Ee-fjX" secondAttribute="trailingMargin" id="Lqc-cv-Z5L"/>
+                            <constraint firstItem="sJa-gS-X2Y" firstAttribute="top" secondItem="j2u-rg-haM" secondAttribute="bottom" constant="8" id="Lww-zw-J1j"/>
+                            <constraint firstItem="ftc-rJ-fE2" firstAttribute="centerX" secondItem="rkZ-Ee-fjX" secondAttribute="centerX" id="N5h-iJ-DTo"/>
+                            <constraint firstItem="weG-7r-FH0" firstAttribute="leading" secondItem="hYg-4J-abU" secondAttribute="trailing" constant="56" id="Ncz-sl-3MT"/>
+                            <constraint firstItem="j2u-rg-haM" firstAttribute="leading" secondItem="rkZ-Ee-fjX" secondAttribute="leadingMargin" id="TxD-PC-ybs"/>
+                            <constraint firstItem="weG-7r-FH0" firstAttribute="top" secondItem="ftc-rJ-fE2" secondAttribute="bottom" constant="21" id="VHG-dr-WB4"/>
+                            <constraint firstItem="j2u-rg-haM" firstAttribute="top" secondItem="WES-M5-Lr1" secondAttribute="bottom" id="Y06-KN-OFa"/>
+                            <constraint firstItem="sJa-gS-X2Y" firstAttribute="trailing" secondItem="rkZ-Ee-fjX" secondAttribute="trailingMargin" id="bAy-tP-uF9"/>
+                            <constraint firstItem="fuM-o3-3eW" firstAttribute="leading" secondItem="ftc-rJ-fE2" secondAttribute="trailing" constant="16" id="kUq-0k-lCN"/>
+                            <constraint firstItem="weG-7r-FH0" firstAttribute="trailing" secondItem="ftc-rJ-fE2" secondAttribute="trailing" id="keK-Pf-z2U"/>
+                            <constraint firstItem="hYg-4J-abU" firstAttribute="leading" secondItem="ftc-rJ-fE2" secondAttribute="leading" id="nbf-Qt-evO"/>
+                            <constraint firstItem="fuM-o3-3eW" firstAttribute="bottom" secondItem="ftc-rJ-fE2" secondAttribute="bottom" id="q9j-V8-L3A"/>
+                            <constraint firstItem="weG-7r-FH0" firstAttribute="leading" secondItem="hYg-4J-abU" secondAttribute="trailing" constant="56" id="rhl-rR-Pl1"/>
+                            <constraint firstItem="hYg-4J-abU" firstAttribute="width" secondItem="weG-7r-FH0" secondAttribute="width" id="sPD-U8-8Io"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnAddTurn" destination="hYg-4J-abU" id="wH1-td-PgO"/>
+                        <outlet property="btnDeleteTurn" destination="weG-7r-FH0" id="fN9-E1-vNQ"/>
+                        <outlet property="btnSwap" destination="fuM-o3-3eW" id="ySH-5W-FZS"/>
+                        <outlet property="txtTurno" destination="ftc-rJ-fE2" id="o8h-37-3oa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LB9-ol-5iM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,5 +244,6 @@
     </scenes>
     <resources>
         <image name="drPing" width="577" height="640"/>
+        <image name="swap" width="30" height="30"/>
     </resources>
 </document>

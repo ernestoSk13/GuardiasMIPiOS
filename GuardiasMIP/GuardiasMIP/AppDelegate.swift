@@ -8,9 +8,11 @@
 
 import UIKit
 import CoreData
+import SuperCoreData.CoreDataHelper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var _coreDataHelper = CoreDataHelper()
 
     var window: UIWindow?
 
@@ -35,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
+        startCDHelper()
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
 
@@ -57,6 +60,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let modelURL = NSBundle.mainBundle().URLForResource("GuardiasMIP", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
+    
+    func startCDHelper () {
+        _coreDataHelper.setupCoreDataWithObjects(["Employee"])
+        _coreDataHelper.storeFileName = "DataModel.sqlite"
+    }
 
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         // The persistent store coordinator for the application. This implementation creates and returns a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
