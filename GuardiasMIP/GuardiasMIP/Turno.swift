@@ -2,7 +2,7 @@
 //  Turno.swift
 //  GuardiasMIP
 //
-//  Created by Ernesto Sánchez Kuri on 28/06/16.
+//  Created by Ernesto Sánchez Kuri on 06/07/16.
 //  Copyright © 2016 Sankurlabs. All rights reserved.
 //
 

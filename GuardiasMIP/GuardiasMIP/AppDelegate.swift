@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        startCDHelper()
+        
         return true
     }
 
@@ -62,7 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
     
     func startCDHelper () {
-        _coreDataHelper.setupCoreDataWithObjects(["Employee"])
+        _coreDataHelper.setupCoreDataWithObjects(["Turno"])
         _coreDataHelper.storeFileName = "DataModel.sqlite"
     }
 

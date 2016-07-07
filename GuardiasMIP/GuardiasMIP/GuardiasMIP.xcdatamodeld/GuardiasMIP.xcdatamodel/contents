@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Fecha" representedClassName=".Fecha" syncable="YES">
+        <attribute name="fechaTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idFecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="turnoFecha" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Turno" inverseName="fechaTurno" inverseEntity="Turno" syncable="YES"/>
+    </entity>
     <entity name="Turno" representedClassName=".Turno" syncable="YES">
         <attribute name="colorTurno" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="finTurno" optional="YES" attributeType="String" syncable="YES"/>
@@ -7,8 +13,10 @@
         <attribute name="inicioTurno" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nombreTurno" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ordenTurno" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fechaTurno" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Fecha" inverseName="turnoFecha" inverseEntity="Fecha" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Turno" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Fecha" positionX="-63" positionY="27" width="128" height="105"/>
+        <element name="Turno" positionX="-63" positionY="-18" width="128" height="150"/>
     </elements>
 </model>

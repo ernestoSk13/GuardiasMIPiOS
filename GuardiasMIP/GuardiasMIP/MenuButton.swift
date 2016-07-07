@@ -23,9 +23,13 @@ public class MenuButton: UIButton {
     
     // MARK: Overrides
     
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        layoutRoundRectLayer()
+    }
+    
     override public func layoutSubviews() {
         super.layoutSubviews()
-        layoutRoundRectLayer()
     }
     
     // MARK: Private
@@ -39,7 +43,7 @@ public class MenuButton: UIButton {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = UIBezierPath(roundedRect: self.bounds, cornerRadius: roundRectCornerRadius).CGPath
         self.layer.borderColor = UIColor(red: 75.0/255.0, green: 201.0/255.0, blue: 230.0/255.0, alpha: 1.0).CGColor
-        if self.tag == 1001 {
+        if self.tag == 2001 {
              self.layer.borderColor = UIColor.redColor().CGColor
         }
         

@@ -178,7 +178,7 @@ public extension NSDate {
     /**
      Returns Returns true if date is today.
      */
-    func isToday() -> Bool
+    func DUisToday() -> Bool
     {
         return self.isEqualToDateIgnoringTime(NSDate())
     }
@@ -342,7 +342,7 @@ public extension NSDate {
      - Parameter days: The number of months to add.
      - Returns A new date object.
      */
-    func dateByAddingMonths(months: Int) -> NSDate
+    func DUdateByAddingMonths(months: Int) -> NSDate
     {
         let dateComp = NSDateComponents()
         dateComp.month = months
@@ -394,7 +394,7 @@ public extension NSDate {
      - Parameter days: The number of days to add.
      - Returns A new date object.
      */
-    func dateByAddingDays(days: Int) -> NSDate
+    func DUdateByAddingDays(days: Int) -> NSDate
     {
         let dateComp = NSDateComponents()
         dateComp.day = days
@@ -728,7 +728,7 @@ public extension NSDate {
     func nearestHour () -> Int {
         let halfHour = NSDate.minuteInSeconds() * 30
         var interval = self.timeIntervalSinceReferenceDate
-        if  self.seconds() < 30 {
+        if  self.DUseconds() < 30 {
             interval -= halfHour
         } else {
             interval += halfHour
@@ -739,11 +739,11 @@ public extension NSDate {
     /**
      Returns the year component.
      */
-    func year () -> Int { return self.components().year  }
+    func DUyear () -> Int { return self.components().year  }
     /**
      Returns the month component.
      */
-    func month () -> Int { return self.components().month }
+    func DUmonth () -> Int { return self.components().month }
     /**
      Returns the week of year component.
      */
@@ -751,27 +751,27 @@ public extension NSDate {
     /**
      Returns the day component.
      */
-    func day () -> Int { return self.components().day }
+    func DUday () -> Int { return self.components().day }
     /**
      Returns the hour component.
      */
-    func hour () -> Int { return self.components().hour }
+    func DUhour () -> Int { return self.components().hour }
     /**
      Returns the minute component.
      */
-    func minute () -> Int { return self.components().minute }
+    func DUminute () -> Int { return self.components().minute }
     /**
      Returns the seconds component.
      */
-    func seconds () -> Int { return self.components().second }
+    func DUseconds () -> Int { return self.components().second }
     /**
      Returns the weekday component.
      */
-    func weekday () -> Int { return self.components().weekday }
+    func DUweekday () -> Int { return self.components().weekday }
     /**
      Returns the nth days component. e.g. 2nd Tuesday of the month is 2.
      */
-    func nthWeekday () -> Int { return self.components().weekdayOrdinal }
+    func DUnthWeekday () -> Int { return self.components().weekdayOrdinal }
     /**
      Returns the days of the month.
      */
