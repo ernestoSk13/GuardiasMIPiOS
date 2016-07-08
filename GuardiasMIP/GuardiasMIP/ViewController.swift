@@ -19,19 +19,8 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
     var selectedEndingDate :NSDate?
     var selectedDates = ["inicioTurno" : "", "finTurno" : ""]
     var turnObjects = [Turno!]()
-    var _activityIndicator : ActivityIndicator?
     
     @IBOutlet weak var btnNext: UIBarButtonItem!
-    
-    
-    func activityIndicator() -> ActivityIndicator {
-        if _activityIndicator == nil {
-            _activityIndicator = storyboard?.instantiateViewControllerWithIdentifier("activityIndicator") as? ActivityIndicator
-            _activityIndicator?.providesPresentationContextTransitionStyle = true
-            _activityIndicator?.modalPresentationStyle = .OverCurrentContext
-        }
-        return _activityIndicator!
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +29,16 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    lazy var activityIndicator : ActivityIndicator = {
+        let indicator =  self.storyboard?.instantiateViewControllerWithIdentifier("activityIndicator") as? ActivityIndicator
+        indicator?.providesPresentationContextTransitionStyle = true
+        indicator?.modalPresentationStyle = .OverCurrentContext
+        
+        return indicator!
+    }()
+    
     func loadUI() {
-        _ = activityIndicator()
+        //_ = activityIndicator()
         btnStartingDate.addTarget(self, action: #selector(ViewController.showDatePicker(_:)), forControlEvents: .TouchUpInside)
         btnEndingDate.addTarget(self, action: #selector(ViewController.showDatePicker(_:)), forControlEvents: .TouchUpInside)
         datePicker = CustomDatePickerViewController.init(delegate: self)
@@ -49,7 +46,7 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
         datePicker.pickerHeight = self.view.frame.size.height
         btnNext.action = #selector(ViewController.validateToAdvance)
         btnNext.target = self
-
+        
         btnStartingDate.titleLabel?.textAlignment = .Center
         btnEndingDate.titleLabel?.textAlignment = .Center
         
@@ -79,7 +76,7 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
     }
     
     func picker(picker: CustomDatePickerViewController!, pickedDate date: NSDate!) {
-         let dateFormatted = date.toString(format: DateFormat.ISO8601(.Date))
+        let dateFormatted = date.toString(format: DateFormat.ISO8601(.Date))
         switch picker.pickerTag as! Int {
         case 1001:
             btnStartingDate.titleLabel?.text = "\(dateFormatted)"
@@ -118,22 +115,27 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
         
         var turnCount = 0
         let last = turnObjects.count
-        presentViewController(_activityIndicator!, animated: true, completion: nil)
-        for currentTurn in turnObjects {
-            let turn = newTurn(currentTurn)
-            
-            sharedHelper.updateExistingInstanceFromObjectWithName("Turno", usingParams: turn, withMainIdentifier: "idTurno", withSuccess: { (success) in
-                print(success)
-                turnCount += 1
-                if  turnCount == last {
-                     //self.performSegueWithIdentifier("secondStepSegue", sender: self)
+        presentViewController(activityIndicator, animated: true) {
+            let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+            dispatch_async(dispatch_get_global_queue(priority, 0)) {
+                // do some task
+                for currentTurn in self.turnObjects {
+                    let turn = self.newTurn(currentTurn)
+                    
+                    
+                    self.sharedHelper.updateExistingInstanceFromObjectWithName("Turno", usingParams: turn, withMainIdentifier: "idTurno", withSuccess: { (success) in
+                        
+                    }) { (errorString, errorDict) in
+                        
+                    }
+                }
+                dispatch_async(dispatch_get_main_queue()) {
+                    // update some UI
                     self.hacerCalculos()
                 }
-                
-                
-            }) { (errorString, errorDict) in
-                
             }
+            
+            
         }
         
     }
@@ -158,10 +160,9 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
         CalendarBrain.getStartingYear(startingDate)
         CalendarBrain.getStartingMonth(startingDate)
         
-        
         CalendarBrain.getTurnDates(turnObjects) { (result) in
             print("Finished")
-            self._activityIndicator!.stopAnimationWithSuccess({ (stoped) in
+            self.activityIndicator.stopAnimationWithSuccess({ (stoped) in
                 let endingDate = NSDate(fromString: self.turnObjects[0].finTurno!, format: DateFormat.ISO8601(.Date))
                 CalendarBrain.getEndingYear(endingDate)
                 CalendarBrain.getEndingMonth(endingDate)
@@ -179,7 +180,7 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
     func datePickerWasCancelled(picker: CustomDatePickerViewController!) {
         
     }
-
+    
     // MARK: - Navigation
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -194,7 +195,7 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
