@@ -26,6 +26,7 @@
 @property (nonatomic) BOOL shouldGetDate;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
+
 - (id)initWithDelegate:(id<CustomDatePickerDelegate>)delegate;
 - (void)showDatePickerInViewController:(UIViewController *)parentVC;
 @end

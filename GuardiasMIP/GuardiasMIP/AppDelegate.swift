@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-import SuperCoreData.CoreDataHelper
+//import SuperCoreData.CoreDataHelper
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

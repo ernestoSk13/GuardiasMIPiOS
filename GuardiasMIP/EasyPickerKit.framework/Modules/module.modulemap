@@ -1,6 +1,0 @@
-framework module EasyPickerKit {
-  umbrella header "EasyPickerKit.h"
-
-  export *
-  module * { export * }
-}

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E0104E31D2F3F6E0070FEDE /* EasyPickerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */; };
-		0E0104E41D2F3F6E0070FEDE /* EasyPickerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E0EB55C1D2384B6000B5C0D /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */; };
 		0E0EB5661D238D49000B5C0D /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5651D238D49000B5C0D /* MenuButton.swift */; };
 		0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB56B1D24CA73000B5C0D /* CoreData.framework */; };
@@ -19,8 +17,6 @@
 		0E282A801D2DFCD100DB300C /* Fecha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7C1D2DFCD100DB300C /* Fecha.swift */; };
 		0E282A811D2DFCD100DB300C /* Turno+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7D1D2DFCD100DB300C /* Turno+CoreDataProperties.swift */; };
 		0E282A821D2DFCD100DB300C /* Turno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7E1D2DFCD100DB300C /* Turno.swift */; };
-		0E456C401D28428800855FD1 /* SuperCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E456C3F1D28428800855FD1 /* SuperCoreData.framework */; };
-		0E456C411D28428800855FD1 /* SuperCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E456C3F1D28428800855FD1 /* SuperCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E456C501D2B7AB500855FD1 /* GMCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */; };
 		0E456C581D2B7D8B00855FD1 /* EPCalendarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C511D2B7D8B00855FD1 /* EPCalendarPicker.swift */; };
 		0E456C591D2B7D8B00855FD1 /* EPCalendarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C521D2B7D8B00855FD1 /* EPCalendarConstants.swift */; };
@@ -41,6 +37,11 @@
 		0E8CF1251D20D77200B788BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CF1231D20D77200B788BA /* LaunchScreen.storyboard */; };
 		0E8CF1301D20D77200B788BA /* GuardiasMIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF12F1D20D77200B788BA /* GuardiasMIPTests.swift */; };
 		0E8CF13B1D20D77200B788BA /* GuardiasMIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF13A1D20D77200B788BA /* GuardiasMIPUITests.swift */; };
+		0E8D00DC1D2F7BC10086D5BF /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00DB1D2F7BC10086D5BF /* CoreDataHelper.m */; };
+		0E8D00E31D2F7BD90086D5BF /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00DF1D2F7BD90086D5BF /* CustomPickerViewController.m */; };
+		0E8D00E41D2F7BD90086D5BF /* CustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E01D2F7BD90086D5BF /* CustomPickerViewController.xib */; };
+		0E8D00E51D2F7BD90086D5BF /* CustomDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */; };
+		0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */; };
 		0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */; };
 		0EE3445A1D2E2D9E00BD2F55 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */; };
 		22212435CF70BD2FE95F0F3B /* Pods_GuardiasMIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */; };
@@ -72,8 +73,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0E456C411D28428800855FD1 /* SuperCoreData.framework in Embed Frameworks */,
-				0E0104E41D2F3F6E0070FEDE /* EasyPickerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,7 +80,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyPickerKit.framework; sourceTree = "<group>"; };
 		0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
 		0E0EB5651D238D49000B5C0D /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		0E0EB56B1D24CA73000B5C0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -92,7 +90,6 @@
 		0E282A7C1D2DFCD100DB300C /* Fecha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fecha.swift; sourceTree = "<group>"; };
 		0E282A7D1D2DFCD100DB300C /* Turno+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Turno+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0E282A7E1D2DFCD100DB300C /* Turno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turno.swift; sourceTree = "<group>"; };
-		0E456C3F1D28428800855FD1 /* SuperCoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SuperCoreData.framework; path = ../SuperCoreData.framework; sourceTree = "<group>"; };
 		0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCalendarViewController.swift; sourceTree = "<group>"; };
 		0E456C511D2B7D8B00855FD1 /* EPCalendarPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarPicker.swift; sourceTree = "<group>"; };
 		0E456C521D2B7D8B00855FD1 /* EPCalendarConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarConstants.swift; sourceTree = "<group>"; };
@@ -121,6 +118,15 @@
 		0E8CF1361D20D77200B788BA /* GuardiasMIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuardiasMIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CF13A1D20D77200B788BA /* GuardiasMIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardiasMIPUITests.swift; sourceTree = "<group>"; };
 		0E8CF13C1D20D77200B788BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E8D00DA1D2F7BC10086D5BF /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		0E8D00DB1D2F7BC10086D5BF /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		0E8D00DD1D2F7BD90086D5BF /* CustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPicker.h; sourceTree = "<group>"; };
+		0E8D00DE1D2F7BD90086D5BF /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
+		0E8D00DF1D2F7BD90086D5BF /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
+		0E8D00E01D2F7BD90086D5BF /* CustomPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPickerViewController.xib; sourceTree = "<group>"; };
+		0E8D00E11D2F7BD90086D5BF /* CustomDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDatePickerViewController.h; sourceTree = "<group>"; };
+		0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDatePickerViewController.m; sourceTree = "<group>"; };
+		0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePickerViewController.xib; sourceTree = "<group>"; };
 		0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		0EE344581D2E2D9E00BD2F55 /* ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator.h; sourceTree = "<group>"; };
 		0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicator.m; sourceTree = "<group>"; };
@@ -140,10 +146,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E456C401D28428800855FD1 /* SuperCoreData.framework in Frameworks */,
 				0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */,
 				38C7DCB31979700543820733 /* Pods_GuardiasMIP.framework in Frameworks */,
-				0E0104E31D2F3F6E0070FEDE /* EasyPickerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +173,8 @@
 		0E0EB55A1D2383F6000B5C0D /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				0E8D00D91D2F7BA10086D5BF /* EasyPickerKit */,
+				0E8D00D81D2F7B940086D5BF /* SuperCoreData */,
 				0E62862F1D2CC450002AB31B /* ColorExtension.swift */,
 				0E62862E1D2CA873002AB31B /* Calendar */,
 				0E46ED5E1D281B9D00016E30 /* UIColor+customProperties.h */,
@@ -214,7 +220,6 @@
 		0E8CF10B1D20D77200B788BA = {
 			isa = PBXGroup;
 			children = (
-				0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */,
 				0E8CF1161D20D77200B788BA /* GuardiasMIP */,
 				0E8CF12E1D20D77200B788BA /* GuardiasMIPTests */,
 				0E8CF1391D20D77200B788BA /* GuardiasMIPUITests */,
@@ -275,10 +280,32 @@
 		0E8CF14C1D20E2BD00B788BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E456C3F1D28428800855FD1 /* SuperCoreData.framework */,
 				0E0EB56B1D24CA73000B5C0D /* CoreData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E8D00D81D2F7B940086D5BF /* SuperCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0E8D00DA1D2F7BC10086D5BF /* CoreDataHelper.h */,
+				0E8D00DB1D2F7BC10086D5BF /* CoreDataHelper.m */,
+			);
+			name = SuperCoreData;
+			sourceTree = "<group>";
+		};
+		0E8D00D91D2F7BA10086D5BF /* EasyPickerKit */ = {
+			isa = PBXGroup;
+			children = (
+				0E8D00DD1D2F7BD90086D5BF /* CustomPicker.h */,
+				0E8D00DE1D2F7BD90086D5BF /* CustomPickerViewController.h */,
+				0E8D00DF1D2F7BD90086D5BF /* CustomPickerViewController.m */,
+				0E8D00E01D2F7BD90086D5BF /* CustomPickerViewController.xib */,
+				0E8D00E11D2F7BD90086D5BF /* CustomDatePickerViewController.h */,
+				0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */,
+				0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */,
+			);
+			name = EasyPickerKit;
 			sourceTree = "<group>";
 		};
 		22A38F5C53B7B04212F005D0 /* Pods */ = {
@@ -418,9 +445,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */,
 				0E456C5B1D2B7D8B00855FD1 /* EPCalendarCell1.xib in Resources */,
 				0E8CF1251D20D77200B788BA /* LaunchScreen.storyboard in Resources */,
 				0E8CF1221D20D77200B788BA /* Assets.xcassets in Resources */,
+				0E8D00E41D2F7BD90086D5BF /* CustomPickerViewController.xib in Resources */,
 				0E8CF11D1D20D77200B788BA /* Main.storyboard in Resources */,
 				0E456C5D1D2B7D8B00855FD1 /* EPCalendarHeaderView.xib in Resources */,
 			);
@@ -576,7 +605,9 @@
 				0E46ED621D28232E00016E30 /* UIViewExtensions.swift in Sources */,
 				0E8CF11A1D20D77200B788BA /* ViewController.swift in Sources */,
 				0E8CF1201D20D77200B788BA /* GuardiasMIP.xcdatamodeld in Sources */,
+				0E8D00E51D2F7BD90086D5BF /* CustomDatePickerViewController.m in Sources */,
 				0E8CF1181D20D77200B788BA /* AppDelegate.swift in Sources */,
+				0E8D00E31D2F7BD90086D5BF /* CustomPickerViewController.m in Sources */,
 				0E0EB5661D238D49000B5C0D /* MenuButton.swift in Sources */,
 				0EE3445A1D2E2D9E00BD2F55 /* ActivityIndicator.m in Sources */,
 				0E0EB55C1D2384B6000B5C0D /* DateUtilities.swift in Sources */,
@@ -588,6 +619,7 @@
 				0E456C5E1D2B7D8B00855FD1 /* EPExtensions.swift in Sources */,
 				0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */,
 				0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */,
+				0E8D00DC1D2F7BC10086D5BF /* CoreDataHelper.m in Sources */,
 				0E456C501D2B7AB500855FD1 /* GMCalendarViewController.swift in Sources */,
 				0E282A811D2DFCD100DB300C /* Turno+CoreDataProperties.swift in Sources */,
 				0E0EB5701D24D442000B5C0D /* TurnView.swift in Sources */,
@@ -740,6 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GuardiasMIP",
@@ -761,6 +794,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ernesto Sanchez Kuri (49VFMFM852)";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GuardiasMIP",

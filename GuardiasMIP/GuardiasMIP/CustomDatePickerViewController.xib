@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDatePickerViewController">
+            <connections>
+                <outlet property="btnCancel" destination="AwH-iy-j6M" id="cv6-s3-KcA"/>
+                <outlet property="btnDone" destination="bF5-jk-9Bb" id="cPg-IJ-3Pr"/>
+                <outlet property="dateLabel" destination="aSa-i6-ur7" id="I74-ZN-uV4"/>
+                <outlet property="fadeView" destination="06R-eR-XM7" id="RGz-4A-Uwg"/>
+                <outlet property="flexSpace" destination="35I-Of-jFU" id="5v1-UO-CBo"/>
+                <outlet property="pickerView" destination="hs6-2D-JT4" id="dkT-uQ-KoH"/>
+                <outlet property="toolbar" destination="MUG-05-QjT" id="WbQ-Ig-l3m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="06R-eR-XM7">
+                    <rect key="frame" x="0.0" y="384" width="600" height="216"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hs6-2D-JT4">
+                    <rect key="frame" x="0.0" y="384" width="600" height="216"/>
+                    <date key="date" timeIntervalSinceReferenceDate="447221123.68476498">
+                        <!--2015-03-05 04:05:23 +0000-->
+                    </date>
+                </datePicker>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUG-05-QjT">
+                    <rect key="frame" x="0.0" y="340" width="600" height="44"/>
+                    <items>
+                        <barButtonItem title="Cancelar" id="AwH-iy-j6M">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="-1" id="Pli-9K-aM0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="35I-Of-jFU"/>
+                        <barButtonItem title="Elegir" id="bF5-jk-9Bb">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="-1" id="ivI-hv-Xj3"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </toolbar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSa-i6-ur7">
+                    <rect key="frame" x="72" y="69" width="456" height="127"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aSa-i6-ur7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="69" id="Cq5-Ol-c86"/>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="top" secondItem="MUG-05-QjT" secondAttribute="bottom" id="JA7-X3-GBn"/>
+                <constraint firstAttribute="trailing" secondItem="hs6-2D-JT4" secondAttribute="trailing" id="Jb4-oH-LZ3"/>
+                <constraint firstAttribute="trailing" secondItem="aSa-i6-ur7" secondAttribute="trailing" constant="72" id="V7d-Ss-BNQ"/>
+                <constraint firstItem="aSa-i6-ur7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="72" id="YxG-xB-JoG"/>
+                <constraint firstItem="hs6-2D-JT4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cS3-91-ubU"/>
+                <constraint firstAttribute="bottom" secondItem="06R-eR-XM7" secondAttribute="bottom" id="hE1-nr-YW5"/>
+                <constraint firstItem="06R-eR-XM7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jNC-a9-bQ2"/>
+                <constraint firstItem="MUG-05-QjT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mcm-dP-DNj"/>
+                <constraint firstAttribute="trailing" secondItem="MUG-05-QjT" secondAttribute="trailing" id="ojy-q1-mdG"/>
+                <constraint firstItem="06R-eR-XM7" firstAttribute="top" secondItem="MUG-05-QjT" secondAttribute="bottom" id="qXs-DW-6bh"/>
+                <constraint firstAttribute="bottom" secondItem="hs6-2D-JT4" secondAttribute="bottom" id="sDP-dm-avu"/>
+                <constraint firstAttribute="trailing" secondItem="06R-eR-XM7" secondAttribute="trailing" id="sgE-k7-LiE"/>
+            </constraints>
+            <point key="canvasLocation" x="305" y="274"/>
+        </view>
+    </objects>
+</document>
