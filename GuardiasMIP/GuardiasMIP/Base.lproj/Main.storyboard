@@ -260,17 +260,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy toca guardia al grupo: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-xt-1DP">
-                                <rect key="frame" x="20" y="525" width="560" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="U1y-su-6eq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu0-GW-XXS" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="163" y="457" width="274" height="60"/>
+                                <rect key="frame" x="163" y="346" width="274" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Big-1K-CUQ"/>
                                 </constraints>
@@ -280,7 +271,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxk-8c-flM" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="163" y="363" width="274" height="60"/>
+                                <rect key="frame" x="163" y="266" width="274" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="PPd-0W-eSc"/>
                                     <constraint firstAttribute="width" constant="274" id="d8H-yM-9vZ"/>
@@ -291,7 +282,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drPing" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-0N-l7g">
-                                <rect key="frame" x="226" y="199" width="149" height="155"/>
+                                <rect key="frame" x="226" y="101" width="149" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="149" id="GCQ-kC-Mz0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="OTJ-rd-FZg"/>
@@ -311,17 +302,26 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy toca guardia al grupo: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-xt-1DP">
+                                <rect key="frame" x="20" y="545" width="560" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="U1y-su-6eq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cxk-8c-flM" firstAttribute="trailing" secondItem="cu0-GW-XXS" secondAttribute="trailing" id="5gK-Hl-hsu"/>
-                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="cu0-GW-XXS" secondAttribute="bottom" constant="83" id="6wg-hl-ZkW"/>
+                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="cu0-GW-XXS" secondAttribute="bottom" constant="194" id="6wg-hl-ZkW"/>
                             <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="cxk-8c-flM" secondAttribute="centerX" id="LLr-nR-sfa"/>
-                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="9" id="W23-Hk-7lb"/>
-                            <constraint firstItem="cu0-GW-XXS" firstAttribute="top" secondItem="cxk-8c-flM" secondAttribute="bottom" constant="34" id="XU9-Dw-ytN"/>
+                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="10" id="W23-Hk-7lb"/>
+                            <constraint firstItem="cu0-GW-XXS" firstAttribute="top" secondItem="cxk-8c-flM" secondAttribute="bottom" constant="20" id="XU9-Dw-ytN"/>
                             <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" id="bCJ-LD-E2J"/>
                             <constraint firstItem="Cj8-xt-1DP" firstAttribute="trailing" secondItem="zNl-Bo-aR2" secondAttribute="trailingMargin" id="dOI-pV-Tnx"/>
-                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="Cj8-xt-1DP" secondAttribute="bottom" constant="40" id="lDh-10-53X"/>
+                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="Cj8-xt-1DP" secondAttribute="bottom" constant="20" id="lDh-10-53X"/>
                             <constraint firstItem="Cj8-xt-1DP" firstAttribute="leading" secondItem="zNl-Bo-aR2" secondAttribute="leadingMargin" id="p7B-Zk-NNi"/>
                             <constraint firstItem="cxk-8c-flM" firstAttribute="leading" secondItem="cu0-GW-XXS" secondAttribute="leading" id="vD6-eM-sgE"/>
                         </constraints>
