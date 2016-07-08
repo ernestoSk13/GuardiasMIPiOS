@@ -260,21 +260,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu0-GW-XXS" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="163" y="346" width="274" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Big-1K-CUQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <state key="normal" title="Ver Rol Actual">
-                                    <color key="titleColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxk-8c-flM" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="163" y="266" width="274" height="60"/>
+                                <rect key="frame" x="189" y="314" width="224" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="PPd-0W-eSc"/>
-                                    <constraint firstAttribute="width" constant="274" id="d8H-yM-9vZ"/>
+                                    <constraint firstAttribute="width" constant="224" id="IXh-li-VcU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Crear Nuevo Rol">
@@ -282,14 +271,14 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drPing" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-0N-l7g">
-                                <rect key="frame" x="226" y="101" width="149" height="155"/>
+                                <rect key="frame" x="226" y="110" width="149" height="155"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="3P1-d5-2yh"/>
                                     <constraint firstAttribute="width" constant="149" id="GCQ-kC-Mz0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="OTJ-rd-FZg"/>
-                                    <constraint firstAttribute="height" constant="155" id="Srv-EY-EQ0"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="149" id="iER-EI-Lys"/>
+                                    <constraint firstAttribute="width" constant="149" id="j07-Ok-SlR"/>
                                     <constraint firstAttribute="height" constant="155" id="l9f-vn-khg"/>
-                                    <constraint firstAttribute="width" constant="149" id="xRg-7b-TDj"/>
                                     <constraint firstAttribute="width" secondItem="Xjg-0N-l7g" secondAttribute="height" multiplier="149:155" id="ywu-R8-gzc"/>
                                 </constraints>
                                 <variation key="default">
@@ -305,25 +294,34 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy toca guardia al grupo: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-xt-1DP">
                                 <rect key="frame" x="20" y="545" width="560" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="U1y-su-6eq"/>
+                                    <constraint firstAttribute="height" constant="35" id="2lb-Rp-Fnh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu0-GW-XXS" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
+                                <rect key="frame" x="189" y="374" width="224" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="5cj-gh-fQY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Ver Rol Actual">
+                                    <color key="titleColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cxk-8c-flM" firstAttribute="trailing" secondItem="cu0-GW-XXS" secondAttribute="trailing" id="5gK-Hl-hsu"/>
-                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="cu0-GW-XXS" secondAttribute="bottom" constant="194" id="6wg-hl-ZkW"/>
-                            <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="cxk-8c-flM" secondAttribute="centerX" id="LLr-nR-sfa"/>
-                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="10" id="W23-Hk-7lb"/>
-                            <constraint firstItem="cu0-GW-XXS" firstAttribute="top" secondItem="cxk-8c-flM" secondAttribute="bottom" constant="20" id="XU9-Dw-ytN"/>
-                            <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" id="bCJ-LD-E2J"/>
-                            <constraint firstItem="Cj8-xt-1DP" firstAttribute="trailing" secondItem="zNl-Bo-aR2" secondAttribute="trailingMargin" id="dOI-pV-Tnx"/>
-                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="Cj8-xt-1DP" secondAttribute="bottom" constant="20" id="lDh-10-53X"/>
-                            <constraint firstItem="Cj8-xt-1DP" firstAttribute="leading" secondItem="zNl-Bo-aR2" secondAttribute="leadingMargin" id="p7B-Zk-NNi"/>
-                            <constraint firstItem="cxk-8c-flM" firstAttribute="leading" secondItem="cu0-GW-XXS" secondAttribute="leading" id="vD6-eM-sgE"/>
+                            <constraint firstItem="Cj8-xt-1DP" firstAttribute="trailing" secondItem="zNl-Bo-aR2" secondAttribute="trailingMargin" id="Ln7-4R-SCt"/>
+                            <constraint firstItem="cu0-GW-XXS" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" constant="1" id="MN9-Mj-1f6"/>
+                            <constraint firstAttribute="bottom" secondItem="Cj8-xt-1DP" secondAttribute="bottom" constant="20" symbolic="YES" id="O2W-Gg-2sf"/>
+                            <constraint firstItem="Cj8-xt-1DP" firstAttribute="leading" secondItem="zNl-Bo-aR2" secondAttribute="leadingMargin" id="Rc2-Fo-XsJ"/>
+                            <constraint firstItem="cxk-8c-flM" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" constant="1" id="Sx3-QX-YWK"/>
+                            <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" id="iDA-TR-1ou"/>
+                            <constraint firstItem="cu0-GW-XXS" firstAttribute="top" secondItem="cxk-8c-flM" secondAttribute="bottom" constant="20" id="rUe-r1-dOY"/>
+                            <constraint firstItem="Xjg-0N-l7g" firstAttribute="top" secondItem="6a3-Ml-BAH" secondAttribute="bottom" constant="46" id="ryk-KY-rM6"/>
+                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="49" id="txj-1R-8Dl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MIP Calendario" id="Srl-lK-uj6">
@@ -336,6 +334,7 @@
                     <connections>
                         <outlet property="btnNuevoRol" destination="cxk-8c-flM" id="zAw-vi-MTM"/>
                         <outlet property="btnRolActual" destination="cu0-GW-XXS" id="AXL-9V-IRO"/>
+                        <outlet property="imgLogo" destination="Xjg-0N-l7g" id="fJL-Ml-T2n"/>
                         <outlet property="lblTurnoActual" destination="Cj8-xt-1DP" id="fPU-Ki-cZC"/>
                         <segue destination="8g5-sT-Vto" kind="show" identifier="newRoleSegue" id="cRA-zw-g1I"/>
                     </connections>

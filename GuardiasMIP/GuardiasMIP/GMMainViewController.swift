@@ -11,6 +11,7 @@ import SuperCoreData.CoreDataHelper
 
 class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
 
+    @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var btnNuevoRol: MenuButton!
     @IBOutlet weak var btnRolActual: MenuButton!
     var sharedHelper =  (UIApplication.sharedApplication().delegate as! AppDelegate)._coreDataHelper
@@ -24,8 +25,8 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(true)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         retrieveInfo()
         loadUI()
     }
@@ -41,6 +42,20 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         } else {
             btnRolActual.hidden = true
             lblTurnoActual.hidden = true
+        }
+        if self.view.frame.size.height < 500 {
+            print("iphone 4")
+            var imgFrame = imgLogo.frame
+            imgFrame.origin.y += 160
+            imgLogo.frame = imgFrame
+            
+            var btnOneFrame = btnNuevoRol.frame
+            btnOneFrame.origin.y += 160
+            btnNuevoRol.frame = btnOneFrame
+            
+            var btnTwoFrame = btnRolActual.frame
+            btnTwoFrame.origin.y += 160
+            btnRolActual.frame = btnTwoFrame
         }
     }
     
