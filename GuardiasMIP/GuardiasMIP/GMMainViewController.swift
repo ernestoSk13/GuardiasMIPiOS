@@ -10,7 +10,7 @@ import UIKit
 import SuperCoreData.CoreDataHelper
 
 class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
-
+    
     @IBOutlet weak var imgLogo: UIImageView!
     @IBOutlet weak var btnNuevoRol: MenuButton!
     @IBOutlet weak var btnRolActual: MenuButton!
@@ -19,6 +19,15 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     var fechas = [Fecha!]()
     
     @IBOutlet weak var lblTurnoActual: UILabel!
+    
+    lazy var activityIndicator : ActivityIndicator = {
+        let indicator =  self.storyboard?.instantiateViewControllerWithIdentifier("activityIndicator") as? ActivityIndicator
+        indicator?.providesPresentationContextTransitionStyle = true
+        indicator?.modalPresentationStyle = .OverCurrentContext
+        
+        return indicator!
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,10 +41,9 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     }
     
     func loadUI() {
-        
         btnNuevoRol.addTarget(self, action: #selector(GMMainViewController.nuevoRol), forControlEvents: UIControlEvents.TouchUpInside)
         if turnos.count > 0 {
-           
+            
             turnoActual()
             btnRolActual.hidden = false
             btnRolActual.addTarget(self, action: #selector(GMMainViewController.mostrarRolActual), forControlEvents: UIControlEvents.TouchUpInside)
@@ -64,25 +72,28 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         let fecha = currentDate.toString(format: DateFormat.ISO8601(.Date))
         let correspodingDate = sharedHelper.singleInstanceOf("Fecha", where: "fechaTurno", isEqualTo: fecha) as? Fecha
         if correspodingDate != nil {
-             lblTurnoActual.hidden = false
+            lblTurnoActual.hidden = false
             lblTurnoActual.text = "Hoy toca guardia al grupo: \(correspodingDate!.idTurno!)"
         }
-}
+    }
     
     
     func nuevoRol() {
         let segue = "newRoleSegue"
-        for turno in turnos {
-            sharedHelper.deleteEntity(turno!)
+        
+        presentViewController(activityIndicator, animated: true) {
+            for turno in self.turnos {
+                self.sharedHelper.deleteEntity(turno!)
+            }
+            
+            for fecha in self.fechas {
+                self.sharedHelper.deleteEntity(fecha)
+            }
         }
+        activityIndicator.stopAnimationWithSuccess({ (success) in
+            self.performSegueWithIdentifier(segue, sender: self)
+        })
         
-        for fecha in fechas {
-            sharedHelper.deleteEntity(fecha)
-        }
-        
-        
-        
-        self.performSegueWithIdentifier(segue, sender: self)
         
     }
     
