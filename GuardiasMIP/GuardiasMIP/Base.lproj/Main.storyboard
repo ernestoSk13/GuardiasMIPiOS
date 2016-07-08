@@ -146,7 +146,7 @@
             </objects>
             <point key="canvasLocation" x="2687" y="1340"/>
         </scene>
-        <!--Determina turnos-->
+        <!--Determina guardias-->
         <scene sceneID="V8c-hj-FG4">
             <objects>
                 <viewController id="8g5-sT-Vto" customClass="GMCreacionTurnosViewController" customModule="GuardiasMIP" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,7 +158,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elige la cantidad de turnos y asigna una letra a cada uno" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2u-rg-haM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elige la cantidad de guardias y asigna una letra a cada una" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2u-rg-haM">
                                 <rect key="frame" x="20" y="20" width="560" height="147"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="3BX-sn-lv0"/>
@@ -179,7 +179,7 @@
                                     <action selector="deleteTurn:" destination="8g5-sT-Vto" eventType="touchUpInside" id="hkK-02-sJF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="*Para editar un turno simplemente da tap sobre la vista correspondiente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-gS-X2Y">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="*Para editar una guardia simplemente da tap sobre la vista correspondiente." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-gS-X2Y">
                                 <rect key="frame" x="20" y="165" width="560" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="jss-Ko-FGJ"/>
@@ -188,7 +188,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de Turno (ej: A)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-rJ-fE2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre de Guardia (ej: A)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-rJ-fE2">
                                 <rect key="frame" x="162" y="231" width="219" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="276" id="9he-N0-b7E"/>
@@ -230,7 +230,7 @@
                             <constraint firstItem="ftc-rJ-fE2" firstAttribute="centerX" secondItem="rkZ-Ee-fjX" secondAttribute="centerX" id="xfF-d5-LbN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Determina turnos" id="Y1n-1m-lte">
+                    <navigationItem key="navigationItem" title="Determina guardias" id="Y1n-1m-lte">
                         <barButtonItem key="rightBarButtonItem" title="Siguiente" id="kPN-Nf-Acf">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
@@ -247,7 +247,7 @@
             </objects>
             <point key="canvasLocation" x="2135" y="118"/>
         </scene>
-        <!--Guardias MIP-->
+        <!--MIP Calendario-->
         <scene sceneID="vaO-1w-FIb">
             <objects>
                 <viewController id="dvf-8C-To5" customClass="GMMainViewController" customModule="GuardiasMIP" customModuleProvider="target" sceneMemberID="viewController">
@@ -260,7 +260,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drPing" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-0N-l7g">
-                                <rect key="frame" x="226" y="79" width="149" height="155"/>
+                                <rect key="frame" x="226" y="122" width="149" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="149" id="GCQ-kC-Mz0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="OTJ-rd-FZg"/>
@@ -289,28 +289,87 @@
                                     <color key="titleColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy toca guardia al grupo: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-xt-1DP">
+                                <rect key="frame" x="20" y="525" width="560" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="U1y-su-6eq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cxk-8c-flM" firstAttribute="trailing" secondItem="cu0-GW-XXS" secondAttribute="trailing" id="5gK-Hl-hsu"/>
                             <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="cu0-GW-XXS" secondAttribute="bottom" constant="140" id="6wg-hl-ZkW"/>
                             <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="cxk-8c-flM" secondAttribute="centerX" id="LLr-nR-sfa"/>
-                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="72" id="W23-Hk-7lb"/>
+                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="29" id="W23-Hk-7lb"/>
                             <constraint firstItem="cu0-GW-XXS" firstAttribute="top" secondItem="cxk-8c-flM" secondAttribute="bottom" constant="34" id="XU9-Dw-ytN"/>
                             <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" id="bCJ-LD-E2J"/>
+                            <constraint firstItem="Cj8-xt-1DP" firstAttribute="trailing" secondItem="zNl-Bo-aR2" secondAttribute="trailingMargin" id="dOI-pV-Tnx"/>
+                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="Cj8-xt-1DP" secondAttribute="bottom" constant="40" id="lDh-10-53X"/>
+                            <constraint firstItem="Cj8-xt-1DP" firstAttribute="leading" secondItem="zNl-Bo-aR2" secondAttribute="leadingMargin" id="p7B-Zk-NNi"/>
                             <constraint firstItem="cxk-8c-flM" firstAttribute="leading" secondItem="cu0-GW-XXS" secondAttribute="leading" id="vD6-eM-sgE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Guardias MIP" id="Srl-lK-uj6"/>
+                    <navigationItem key="navigationItem" title="MIP Calendario" id="Srl-lK-uj6">
+                        <barButtonItem key="leftBarButtonItem" title="Acerca de" id="FcH-l5-pwo">
+                            <connections>
+                                <segue destination="LXj-OC-b3l" kind="show" id="lLK-W3-DGh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="btnNuevoRol" destination="cxk-8c-flM" id="zAw-vi-MTM"/>
                         <outlet property="btnRolActual" destination="cu0-GW-XXS" id="AXL-9V-IRO"/>
+                        <outlet property="lblTurnoActual" destination="Cj8-xt-1DP" id="fPU-Ki-cZC"/>
                         <segue destination="8g5-sT-Vto" kind="show" identifier="newRoleSegue" id="cRA-zw-g1I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFh-uu-DPo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1194" y="520"/>
+        </scene>
+        <!--Acerca de-->
+        <scene sceneID="c0j-Gh-29x">
+            <objects>
+                <viewController title="Acerca de" id="LXj-OC-b3l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3gK-i2-fcc"/>
+                        <viewControllerLayoutGuide type="bottom" id="p5m-Z1-N0d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="54i-Me-V6g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para sugerencias, comentarios o información, puedes mandar un correo a: sankurlabs@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKr-ig-PRs">
+                                <rect key="frame" x="20" y="72" width="560" height="394"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SanKurLogosSplash" translatesAutoresizingMaskIntoConstraints="NO" id="Vv9-hV-OLv">
+                                <rect key="frame" x="265" y="510" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Z1O-wP-4QD"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CKr-ig-PRs" firstAttribute="top" secondItem="3gK-i2-fcc" secondAttribute="bottom" constant="8" symbolic="YES" id="1Dn-RO-Alq"/>
+                            <constraint firstItem="CKr-ig-PRs" firstAttribute="trailing" secondItem="54i-Me-V6g" secondAttribute="trailingMargin" id="6qQ-hS-eI6"/>
+                            <constraint firstItem="CKr-ig-PRs" firstAttribute="centerX" secondItem="Vv9-hV-OLv" secondAttribute="centerX" id="RZm-4I-K0N"/>
+                            <constraint firstAttribute="bottom" secondItem="Vv9-hV-OLv" secondAttribute="bottom" constant="20" symbolic="YES" id="RjL-T0-miz"/>
+                            <constraint firstItem="CKr-ig-PRs" firstAttribute="leading" secondItem="54i-Me-V6g" secondAttribute="leadingMargin" id="YxG-Ti-9bY"/>
+                            <constraint firstItem="Vv9-hV-OLv" firstAttribute="top" secondItem="CKr-ig-PRs" secondAttribute="bottom" constant="44" id="rbw-Ua-0at"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AM-54-GeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="1195"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JMV-fQ-0K0">
@@ -355,6 +414,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="SanKurLogosSplash" width="70" height="70"/>
         <image name="drPing" width="577" height="640"/>
     </resources>
 </document>

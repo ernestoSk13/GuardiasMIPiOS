@@ -45,6 +45,7 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
         btnStartingDate.addTarget(self, action: #selector(ViewController.showDatePicker(_:)), forControlEvents: .TouchUpInside)
         btnEndingDate.addTarget(self, action: #selector(ViewController.showDatePicker(_:)), forControlEvents: .TouchUpInside)
         datePicker = CustomDatePickerViewController.init(delegate: self)
+        
         datePicker.pickerHeight = self.view.frame.size.height
         btnNext.action = #selector(ViewController.validateToAdvance)
         btnNext.target = self

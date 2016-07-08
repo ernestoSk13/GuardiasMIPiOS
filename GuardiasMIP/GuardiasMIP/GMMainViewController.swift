@@ -17,6 +17,7 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     var turnos = [Turno!]()
     var fechas = [Fecha!]()
     
+    @IBOutlet weak var lblTurnoActual: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,12 +34,26 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         
         btnNuevoRol.addTarget(self, action: #selector(GMMainViewController.nuevoRol), forControlEvents: UIControlEvents.TouchUpInside)
         if turnos.count > 0 {
+           
+            turnoActual()
             btnRolActual.hidden = false
             btnRolActual.addTarget(self, action: #selector(GMMainViewController.mostrarRolActual), forControlEvents: UIControlEvents.TouchUpInside)
         } else {
             btnRolActual.hidden = true
+            lblTurnoActual.hidden = true
         }
     }
+    
+    func turnoActual() {
+        let currentDate = NSDate()
+        let fecha = currentDate.toString(format: DateFormat.ISO8601(.Date))
+        let correspodingDate = sharedHelper.singleInstanceOf("Fecha", where: "fechaTurno", isEqualTo: fecha) as? Fecha
+        if correspodingDate != nil {
+             lblTurnoActual.hidden = false
+            lblTurnoActual.text = "Hoy toca guardia al grupo: \(correspodingDate!.idTurno!)"
+        }
+}
+    
     
     func nuevoRol() {
         let segue = "newRoleSegue"

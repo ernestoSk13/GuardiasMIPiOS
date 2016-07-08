@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0104E31D2F3F6E0070FEDE /* EasyPickerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */; };
+		0E0104E41D2F3F6E0070FEDE /* EasyPickerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E0EB55C1D2384B6000B5C0D /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */; };
 		0E0EB5661D238D49000B5C0D /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5651D238D49000B5C0D /* MenuButton.swift */; };
 		0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB56B1D24CA73000B5C0D /* CoreData.framework */; };
@@ -19,8 +21,6 @@
 		0E282A821D2DFCD100DB300C /* Turno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7E1D2DFCD100DB300C /* Turno.swift */; };
 		0E456C401D28428800855FD1 /* SuperCoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E456C3F1D28428800855FD1 /* SuperCoreData.framework */; };
 		0E456C411D28428800855FD1 /* SuperCoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E456C3F1D28428800855FD1 /* SuperCoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0E456C4B1D28439B00855FD1 /* EasyPickerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E456C4A1D28439B00855FD1 /* EasyPickerKit.framework */; };
-		0E456C4C1D28439B00855FD1 /* EasyPickerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E456C4A1D28439B00855FD1 /* EasyPickerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E456C501D2B7AB500855FD1 /* GMCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */; };
 		0E456C581D2B7D8B00855FD1 /* EPCalendarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C511D2B7D8B00855FD1 /* EPCalendarPicker.swift */; };
 		0E456C591D2B7D8B00855FD1 /* EPCalendarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C521D2B7D8B00855FD1 /* EPCalendarConstants.swift */; };
@@ -73,7 +73,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0E456C411D28428800855FD1 /* SuperCoreData.framework in Embed Frameworks */,
-				0E456C4C1D28439B00855FD1 /* EasyPickerKit.framework in Embed Frameworks */,
+				0E0104E41D2F3F6E0070FEDE /* EasyPickerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyPickerKit.framework; sourceTree = "<group>"; };
 		0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
 		0E0EB5651D238D49000B5C0D /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		0E0EB56B1D24CA73000B5C0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -92,7 +93,6 @@
 		0E282A7D1D2DFCD100DB300C /* Turno+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Turno+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0E282A7E1D2DFCD100DB300C /* Turno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turno.swift; sourceTree = "<group>"; };
 		0E456C3F1D28428800855FD1 /* SuperCoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SuperCoreData.framework; path = ../SuperCoreData.framework; sourceTree = "<group>"; };
-		0E456C4A1D28439B00855FD1 /* EasyPickerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPickerKit.framework; path = ../EasyPickerKit.framework; sourceTree = "<group>"; };
 		0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCalendarViewController.swift; sourceTree = "<group>"; };
 		0E456C511D2B7D8B00855FD1 /* EPCalendarPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarPicker.swift; sourceTree = "<group>"; };
 		0E456C521D2B7D8B00855FD1 /* EPCalendarConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarConstants.swift; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 			files = (
 				0E456C401D28428800855FD1 /* SuperCoreData.framework in Frameworks */,
 				0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */,
-				0E456C4B1D28439B00855FD1 /* EasyPickerKit.framework in Frameworks */,
 				38C7DCB31979700543820733 /* Pods_GuardiasMIP.framework in Frameworks */,
+				0E0104E31D2F3F6E0070FEDE /* EasyPickerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +214,7 @@
 		0E8CF10B1D20D77200B788BA = {
 			isa = PBXGroup;
 			children = (
+				0E0104E21D2F3F6E0070FEDE /* EasyPickerKit.framework */,
 				0E8CF1161D20D77200B788BA /* GuardiasMIP */,
 				0E8CF12E1D20D77200B788BA /* GuardiasMIPTests */,
 				0E8CF1391D20D77200B788BA /* GuardiasMIPUITests */,
@@ -274,7 +275,6 @@
 		0E8CF14C1D20E2BD00B788BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E456C4A1D28439B00855FD1 /* EasyPickerKit.framework */,
 				0E456C3F1D28428800855FD1 /* SuperCoreData.framework */,
 				0E0EB56B1D24CA73000B5C0D /* CoreData.framework */,
 			);

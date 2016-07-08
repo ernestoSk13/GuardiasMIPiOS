@@ -54,7 +54,7 @@ public class EPCalendarPicker: UICollectionViewController {
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Turnos"
+        self.title = "Guardias"
         // setup Navigationbar
         self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
        self.navigationController?.navigationBar.barTintColor = UIColor.containerViewColor()
@@ -144,7 +144,7 @@ public class EPCalendarPicker: UICollectionViewController {
     func inititlizeBarButtons(){
         
 
-        let cancelButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Cancel, target: self, action: #selector(EPCalendarPicker.onTouchCancelButton))
+        let cancelButton = UIBarButtonItem(title: "Cancelar", style: UIBarButtonItemStyle.Plain, target: self, action:#selector(EPCalendarPicker.onTouchCancelButton))
         self.navigationItem.leftBarButtonItem = cancelButton
 
         var arrayBarButtons  = [UIBarButtonItem]()
@@ -166,7 +166,7 @@ public class EPCalendarPicker: UICollectionViewController {
     
     
     func showAlertInfo() {
-        let alert = UIAlertController(title: "Calendario de turnos", message: "Para saber qué color corresponde a cada turno, observa en la parte superior la nomenclatura de turnos y su respectivo color.", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Calendario de Guardias", message: "Para saber que color corresponde a cada guardia, observa en la parte superior la nomenclatura de turnos y su respectivo color.", preferredStyle: .Alert)
         let okAction = UIAlertAction(title: "Ok", style: .Default, handler: { void in
         })
         alert.addAction(okAction)

@@ -242,7 +242,7 @@ class GMCreacionTurnosViewController: UIViewController, UIGestureRecognizerDeleg
             
             
         } else {
-            let alert = UIAlertController(title: "Alerta", message: "Necesita haber más de un turno para poder continuar.", preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Alerta", message: "Necesita haber más de una guardia para poder continuar.", preferredStyle: .Alert)
             let okAction = UIAlertAction(title: "Ok", style: .Default, handler: { void in
                 self.txtTurno.resignFirstResponder()
             })
