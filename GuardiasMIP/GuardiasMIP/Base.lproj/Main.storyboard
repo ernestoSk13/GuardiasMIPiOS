@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
@@ -19,26 +20,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elige tus fechas de ingreso y salida" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-KF-Kcj">
-                                <rect key="frame" x="20" y="28" width="560" height="100"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <color key="textColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fecha de ingreso:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3QJ-Yc-vQR">
-                                <rect key="frame" x="221" y="199" width="164" height="21"/>
+                                <rect key="frame" x="222" y="186" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Fecha de salida:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMW-L0-Lyw">
-                                <rect key="frame" x="221" y="391" width="164" height="21"/>
+                                <rect key="frame" x="222" y="313" width="164" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1001" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-uv-X24" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="150" y="240" width="298" height="60"/>
+                                <rect key="frame" x="151" y="227" width="298" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="2YP-LH-Web"/>
                                     <constraint firstAttribute="width" constant="298" id="LLU-5v-Tsn"/>
@@ -50,7 +45,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" tag="1002" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFZ-1F-DoM" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="154" y="432" width="298" height="60"/>
+                                <rect key="frame" x="151" y="354" width="298" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="3LC-Vo-OeJ"/>
                                     <constraint firstAttribute="width" constant="298" id="uyR-MZ-Eg9"/>
@@ -61,19 +56,25 @@
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Elige tus fechas de ingreso y salida" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fT-KF-Kcj">
+                                <rect key="frame" x="21" y="72" width="560" height="100"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3QJ-Yc-vQR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="1AF-KZ-qzu"/>
+                            <constraint firstItem="3QJ-Yc-vQR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="1AF-KZ-qzu"/>
                             <constraint firstItem="lfF-uv-X24" firstAttribute="top" secondItem="3QJ-Yc-vQR" secondAttribute="bottom" constant="20" id="24l-fE-HSy"/>
-                            <constraint firstItem="PMW-L0-Lyw" firstAttribute="top" secondItem="lfF-uv-X24" secondAttribute="bottom" constant="91" id="GVu-gi-gQE"/>
-                            <constraint firstItem="PMW-L0-Lyw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="UMG-We-3kT"/>
-                            <constraint firstItem="3QJ-Yc-vQR" firstAttribute="top" secondItem="9fT-KF-Kcj" secondAttribute="bottom" constant="71" id="UhE-Vu-v9r"/>
-                            <constraint firstItem="TFZ-1F-DoM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="3" id="VTP-o1-uTh"/>
+                            <constraint firstItem="PMW-L0-Lyw" firstAttribute="top" secondItem="lfF-uv-X24" secondAttribute="bottom" constant="26" id="GVu-gi-gQE"/>
+                            <constraint firstItem="PMW-L0-Lyw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="4" id="UMG-We-3kT"/>
+                            <constraint firstItem="3QJ-Yc-vQR" firstAttribute="top" secondItem="9fT-KF-Kcj" secondAttribute="bottom" constant="14" id="UhE-Vu-v9r"/>
+                            <constraint firstItem="TFZ-1F-DoM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VTP-o1-uTh"/>
                             <constraint firstItem="TFZ-1F-DoM" firstAttribute="top" secondItem="PMW-L0-Lyw" secondAttribute="bottom" constant="20" id="Vfw-2E-c46"/>
-                            <constraint firstItem="9fT-KF-Kcj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ai7-4U-Iba"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9fT-KF-Kcj" secondAttribute="trailing" id="bM8-xy-llc"/>
-                            <constraint firstItem="lfF-uv-X24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="fHT-66-zDX"/>
+                            <constraint firstItem="lfF-uv-X24" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fHT-66-zDX"/>
+                            <constraint firstItem="9fT-KF-Kcj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="iUp-U3-hgf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="9fT-KF-Kcj" secondAttribute="leading" id="kE9-zD-O95"/>
                         </constraints>
                     </view>
@@ -259,17 +260,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drPing" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-0N-l7g">
-                                <rect key="frame" x="226" y="122" width="149" height="155"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy toca guardia al grupo: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-xt-1DP">
+                                <rect key="frame" x="20" y="525" width="560" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="149" id="GCQ-kC-Mz0"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="OTJ-rd-FZg"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="149" id="iER-EI-Lys"/>
-                                    <constraint firstAttribute="height" constant="155" id="l9f-vn-khg"/>
+                                    <constraint firstAttribute="height" constant="35" id="U1y-su-6eq"/>
                                 </constraints>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu0-GW-XXS" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="163" y="400" width="274" height="60"/>
+                                <rect key="frame" x="163" y="457" width="274" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Big-1K-CUQ"/>
                                 </constraints>
@@ -279,7 +280,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxk-8c-flM" customClass="MenuButton" customModule="GuardiasMIP" customModuleProvider="target">
-                                <rect key="frame" x="163" y="306" width="274" height="60"/>
+                                <rect key="frame" x="163" y="363" width="274" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="PPd-0W-eSc"/>
                                     <constraint firstAttribute="width" constant="274" id="d8H-yM-9vZ"/>
@@ -289,22 +290,34 @@
                                     <color key="titleColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy toca guardia al grupo: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-xt-1DP">
-                                <rect key="frame" x="20" y="525" width="560" height="35"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drPing" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-0N-l7g">
+                                <rect key="frame" x="226" y="199" width="149" height="155"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="U1y-su-6eq"/>
+                                    <constraint firstAttribute="width" constant="149" id="GCQ-kC-Mz0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="155" id="OTJ-rd-FZg"/>
+                                    <constraint firstAttribute="height" constant="155" id="Srv-EY-EQ0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="149" id="iER-EI-Lys"/>
+                                    <constraint firstAttribute="height" constant="155" id="l9f-vn-khg"/>
+                                    <constraint firstAttribute="width" constant="149" id="xRg-7b-TDj"/>
+                                    <constraint firstAttribute="width" secondItem="Xjg-0N-l7g" secondAttribute="height" multiplier="149:155" id="ywu-R8-gzc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GCQ-kC-Mz0"/>
+                                        <exclude reference="OTJ-rd-FZg"/>
+                                        <exclude reference="iER-EI-Lys"/>
+                                        <exclude reference="l9f-vn-khg"/>
+                                        <exclude reference="ywu-R8-gzc"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cxk-8c-flM" firstAttribute="trailing" secondItem="cu0-GW-XXS" secondAttribute="trailing" id="5gK-Hl-hsu"/>
-                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="cu0-GW-XXS" secondAttribute="bottom" constant="140" id="6wg-hl-ZkW"/>
+                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="cu0-GW-XXS" secondAttribute="bottom" constant="83" id="6wg-hl-ZkW"/>
                             <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="cxk-8c-flM" secondAttribute="centerX" id="LLr-nR-sfa"/>
-                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="29" id="W23-Hk-7lb"/>
+                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="9" id="W23-Hk-7lb"/>
                             <constraint firstItem="cu0-GW-XXS" firstAttribute="top" secondItem="cxk-8c-flM" secondAttribute="bottom" constant="34" id="XU9-Dw-ytN"/>
                             <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" id="bCJ-LD-E2J"/>
                             <constraint firstItem="Cj8-xt-1DP" firstAttribute="trailing" secondItem="zNl-Bo-aR2" secondAttribute="trailingMargin" id="dOI-pV-Tnx"/>
@@ -346,7 +359,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para sugerencias, comentarios o información, puedes mandar un correo a: sankurlabs@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKr-ig-PRs">
                                 <rect key="frame" x="20" y="72" width="560" height="394"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SanKurLogosSplash" translatesAutoresizingMaskIntoConstraints="NO" id="Vv9-hV-OLv">

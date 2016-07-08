@@ -10,7 +10,7 @@ import UIKit
 import SuperCoreData.CoreDataHelper
 
 
-class GMCreacionTurnosViewController: UIViewController, UIGestureRecognizerDelegate {
+class GMCreacionTurnosViewController: UIViewController, UIGestureRecognizerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var txtTurno: UITextField!
     @IBOutlet weak var btnAddTurn: MenuButton!
@@ -47,6 +47,7 @@ class GMCreacionTurnosViewController: UIViewController, UIGestureRecognizerDeleg
          btnDeleteTurn.alpha = 0.0
         selectableTurn.hidden = true
         selectableTurn.alpha = 0.0
+        txtTurno.delegate = self
         let gesture = UITapGestureRecognizer(target: self, action: #selector(GMCreacionTurnosViewController.resignTextField))
         self.view.userInteractionEnabled = true
         self.view.addGestureRecognizer(gesture)
@@ -333,6 +334,85 @@ class GMCreacionTurnosViewController: UIViewController, UIGestureRecognizerDeleg
             
         }
     }
+    
+    // MARK: Textdfield Delegate
+    
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        textField.becomeFirstResponder()
+        let extraSpace = CGFloat(0)
+        let textFieldFrame = textField.frame
+        var currentFrame = self.view.frame
+        
+        if ((textFieldFrame.origin.y + textFieldFrame.size.height) > (self.view.frame.height / 2)) {
+            currentFrame.origin.y = ((self.view.frame.size.height / 2) - (textFieldFrame.origin.y + textFieldFrame.size.height)) - 40 - extraSpace
+        }
+        UIView.animateWithDuration(0.9, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: { 
+            if self.view.frame.size.height > 500 && self.view.frame.size.height < 1000 {
+                self.view.frame = currentFrame
+            } else if self.view.frame.size.height > 1000 {
+                
+            } else {
+                self.view.frame = currentFrame
+            }
+            
+            }) { (completed) in
+                
+        }
+        
+    }
+    
+    func textFieldDidEndEditing(textField: UITextField) {
+        textField.resignFirstResponder()
+        UIView.animateWithDuration(0.9, delay: 0.0, options: UIViewAnimationOptions.CurveEaseInOut, animations: {
+             self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)
+        }) { (completed) in
+            
+        }
+
+       
+    }
+    
+
+
+//    -(void)textFieldDidEndEditing:(UITextField *)textField
+//    {
+//    [textField resignFirstResponder];
+//    BOOL hasNextTxt = NO;
+//    
+//    UITextField *view =(UITextField *)[self.view viewWithTag:textField.tag + 1];
+//    if (!view){
+//    [textField resignFirstResponder];
+//    }else{
+//    hasNextTxt = YES;
+//    [view becomeFirstResponder];
+//    }
+//    UIScrollView *scrollView;
+//    if ([textField.superview isKindOfClass:[UIScrollView class]]) {
+//    scrollView = (UIScrollView *)textField.superview;
+//    self.hasScrollView = YES;
+//    scrollView.scrollEnabled = YES;
+//    }
+//    //[textField resignFirstResponder];
+//    [UIView animateWithDuration:0.6
+//    delay:0.0
+//    options:UIViewAnimationOptionCurveEaseOut
+//    animations:^{
+//    if (!hasNextTxt) {
+//    if (self.hasScrollView) {
+//    [scrollView setContentOffset:CGPointMake(0, 50)];
+//    }else{
+//    self.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+//    }
+//    }
+//    }
+//    completion:^(BOOL finished) {
+//    }
+//    
+//    ];
+//    //return YES;
+//    }
+
     
 
 }
