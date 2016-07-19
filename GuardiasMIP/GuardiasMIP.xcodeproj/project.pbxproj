@@ -245,10 +245,7 @@
 				0E0EB5711D25F3A5000B5C0D /* Modelos */,
 				0E0EB55A1D2383F6000B5C0D /* Lib */,
 				0E8CF1171D20D77200B788BA /* AppDelegate.swift */,
-				0E8CF1191D20D77200B788BA /* ViewController.swift */,
-				0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */,
-				0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */,
-				0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */,
+				0EE2F7C81D3DD6A600AFB145 /* Controllers */,
 				0E8CF11B1D20D77200B788BA /* Main.storyboard */,
 				0E8CF1211D20D77200B788BA /* Assets.xcassets */,
 				0E8CF1231D20D77200B788BA /* LaunchScreen.storyboard */,
@@ -306,6 +303,49 @@
 				0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */,
 			);
 			name = EasyPickerKit;
+			sourceTree = "<group>";
+		};
+		0EE2F7C41D3DD63B00AFB145 /* Creacion De Turnos */ = {
+			isa = PBXGroup;
+			children = (
+				0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */,
+			);
+			name = "Creacion De Turnos";
+			sourceTree = "<group>";
+		};
+		0EE2F7C51D3DD65800AFB145 /* Calendario Actual */ = {
+			isa = PBXGroup;
+			children = (
+				0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */,
+			);
+			name = "Calendario Actual";
+			sourceTree = "<group>";
+		};
+		0EE2F7C61D3DD67E00AFB145 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		0EE2F7C71D3DD69800AFB145 /* Seleccion de Fechas */ = {
+			isa = PBXGroup;
+			children = (
+				0E8CF1191D20D77200B788BA /* ViewController.swift */,
+			);
+			name = "Seleccion de Fechas";
+			sourceTree = "<group>";
+		};
+		0EE2F7C81D3DD6A600AFB145 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2F7C71D3DD69800AFB145 /* Seleccion de Fechas */,
+				0EE2F7C61D3DD67E00AFB145 /* Menu */,
+				0EE2F7C51D3DD65800AFB145 /* Calendario Actual */,
+				0EE2F7C41D3DD63B00AFB145 /* Creacion De Turnos */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		22A38F5C53B7B04212F005D0 /* Pods */ = {

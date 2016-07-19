@@ -43,6 +43,14 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     func loadUI() {
         btnNuevoRol.addTarget(self, action: #selector(GMMainViewController.nuevoRol), forControlEvents: UIControlEvents.TouchUpInside)
         if turnos.count > 0 {
+            guard turnos[0].inicioTurno != nil else {
+                for turno in self.turnos {
+                    self.sharedHelper.deleteEntity(turno!)
+                }
+                btnRolActual.hidden = true
+                lblTurnoActual.hidden = true
+                return
+            }
             
             turnoActual()
             btnRolActual.hidden = false
@@ -107,7 +115,7 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     }
     
     func hacerCalculos() {
-        let startingDate = NSDate(fromString: turnos[0].inicioTurno!, format: DateFormat.ISO8601(.Date))
+         let startingDate = NSDate(fromString: turnos[0].inicioTurno!, format: DateFormat.ISO8601(.Date))
         CalendarBrain.getStartingYear(startingDate)
         CalendarBrain.getStartingMonth(startingDate)
         

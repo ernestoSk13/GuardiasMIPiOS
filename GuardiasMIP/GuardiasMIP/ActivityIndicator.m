@@ -24,7 +24,7 @@
     self.lblLoading = [[UILabel alloc]initWithFrame:CGRectMake(10, self.loadingIndicator.frame.origin.y + self.loadingIndicator.frame.size.height + 20, self.view.frame.size.width - 20, 50)];
     self.lblLoading.numberOfLines = 0;
     [self.lblLoading setTextAlignment:NSTextAlignmentCenter];
-    [self.lblLoading setText:@"Loading"];
+    [self.lblLoading setText:@"Cargando..."];
     [self.lblLoading setFont:[UIFont systemFontOfSize:20]];
     [self.lblLoading setTextColor:[UIColor whiteColor]];
     self.lblLoading.textAlignment = NSTextAlignmentCenter;
@@ -49,7 +49,7 @@
 {
     [self.loadingIndicator startAnimating];
     if (self.msgLoading.length < 1) {
-       self.msgLoading = @"Loading";
+       self.msgLoading = @"Cargando...";
     }
     [self.lblLoading setText:self.msgLoading];
     

@@ -104,6 +104,20 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
         }
         
         
+        let endingYear = selectedEndingDate?.year()
+        let startingYear = selectedStartingDate?.year()
+        
+        if (endingYear! - startingYear!) > 2 {
+            let alert = UIAlertController(title: "Importante!", message: "Por el momento la aplicación solo maneja guardias con un periodo de duración máximo de 2 años", preferredStyle: .Alert)
+            let okAction = UIAlertAction(title: "Ok", style: .Default, handler: { void in
+            })
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+            return;
+        }
+        
+        
+        
         if selectedEndingDate!.isEarlierThanDate(selectedStartingDate!) {
             let alert = UIAlertController(title: "Alerta", message: "La fecha de fin debe de ser mayor a la fecha de inicio.", preferredStyle: .Alert)
             let okAction = UIAlertAction(title: "Ok", style: .Default, handler: { void in
@@ -113,8 +127,6 @@ class ViewController: UIViewController, CustomDatePickerDelegate, EPCalendarPick
             return;
         }
         
-        var turnCount = 0
-        let last = turnObjects.count
         presentViewController(activityIndicator, animated: true) {
             let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
             dispatch_async(dispatch_get_global_queue(priority, 0)) {
