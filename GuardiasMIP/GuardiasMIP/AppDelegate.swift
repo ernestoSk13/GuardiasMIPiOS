@@ -8,7 +8,9 @@
 
 import UIKit
 import CoreData
-//import SuperCoreData.CoreDataHelper
+import Firebase
+import GoogleMobileAds
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,6 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         startCDHelper()
+        FIRApp.configure()
+        GADMobileAds.configureWithApplicationID("ca-app-pub-3861210981220625~9715747393")
+        FIRAnalytics.logEventWithName("El usuario abrió la aplicación", parameters: ["Fecha" : NSDate().description])
+       
+        
         
         return true
     }
@@ -47,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+        FIRAnalytics.logEventWithName("El usuario cerró la aplicación", parameters: ["Fecha" : NSDate().description])
     }
 
     // MARK: - Core Data stack

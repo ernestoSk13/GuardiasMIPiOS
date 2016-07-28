@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import GoogleMobileAds
+import Firebase
+
 //import SuperCoreData.CoreDataHelper
 
 class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
@@ -17,6 +20,8 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     var sharedHelper =  (UIApplication.sharedApplication().delegate as! AppDelegate)._coreDataHelper
     var turnos = [Turno!]()
     var fechas = [Fecha!]()
+    
+    @IBOutlet weak var bannerView: GADBannerView!
     
     @IBOutlet weak var lblTurnoActual: UILabel!
     
@@ -30,7 +35,15 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         
+        let request = GADRequest()
+        //request.testDevices = [kGADSimulatorID]
+        
+        bannerView.adUnitID = "ca-app-pub-3861210981220625/2192480596"
+        bannerView.rootViewController = self
+        bannerView.loadRequest(request)
+        rateMe()
         
     }
     
@@ -99,6 +112,7 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
             }
         }
         activityIndicator.stopAnimationWithSuccess({ (success) in
+            FIRAnalytics.logEventWithName("El usuario creó un nuevo calendario", parameters: ["Fecha" : NSDate()])
             self.performSegueWithIdentifier(segue, sender: self)
         })
         
@@ -111,6 +125,7 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     }
     
     func mostrarRolActual () {
+        FIRAnalytics.logEventWithName("El usuario abrió un calendario creado", parameters: ["Fecha" : NSDate()])
         hacerCalculos()
     }
     
@@ -128,5 +143,38 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         let navigationController = UINavigationController(rootViewController: calendarPicker)
         self.presentViewController(navigationController, animated: true, completion: nil)
         
+    }
+    
+    //MARK: Rate me 
+    
+    var iMinSessions = 3
+    var iTryAgainSessions = 6
+    
+    func rateMe() {
+        let neverRate = NSUserDefaults.standardUserDefaults().boolForKey("neverRate")
+        var numLaunches = NSUserDefaults.standardUserDefaults().integerForKey("numLaunches") + 1
+        
+        if (!neverRate && (numLaunches == iMinSessions || numLaunches >= (iMinSessions + iTryAgainSessions + 1)))
+        {
+            showRateMe()
+            numLaunches = iMinSessions + 1
+        }
+        NSUserDefaults.standardUserDefaults().setInteger(numLaunches, forKey: "numLaunches")
+    }
+    
+    func showRateMe() {
+        let alert = UIAlertController(title: "Ayúdanos a mejorar", message: "Gracias por utilizar MIP Calendario. Nos gustaría saber tú opinión y sugerencias calificándonos en el App Store", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Calificar MIP Calendario", style: UIAlertActionStyle.Default, handler: { alertAction in
+            UIApplication.sharedApplication().openURL(NSURL(string : "https://itunes.apple.com/es/app/mip-calendario/id1132442892")!)
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "No gracias", style: UIAlertActionStyle.Default, handler: { alertAction in
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Tal vez después", style: UIAlertActionStyle.Default, handler: { alertAction in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }

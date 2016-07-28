@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 //import SuperCoreData.CoreDataHelper
 
 
@@ -238,6 +239,7 @@ class GMCreacionTurnosViewController: UIViewController, UIGestureRecognizerDeleg
     
     func validateAndAvance() {
         if turnObjects.count > 1 {
+            FIRAnalytics.logEventWithName("El usuario creó \(turnObjects.count) nuevos turnos", parameters: ["Turnos" : turnObjects.count])
             performSegueWithIdentifier("firstStepSegue", sender: self)
             
             

@@ -271,7 +271,7 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drPing" translatesAutoresizingMaskIntoConstraints="NO" id="Xjg-0N-l7g">
-                                <rect key="frame" x="226" y="110" width="149" height="155"/>
+                                <rect key="frame" x="226" y="127" width="149" height="155"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="155" id="3P1-d5-2yh"/>
                                     <constraint firstAttribute="width" constant="149" id="GCQ-kC-Mz0"/>
@@ -292,7 +292,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hoy toca guardia al grupo: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cj8-xt-1DP">
-                                <rect key="frame" x="20" y="545" width="560" height="35"/>
+                                <rect key="frame" x="20" y="72" width="560" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="2lb-Rp-Fnh"/>
                                 </constraints>
@@ -310,18 +310,28 @@
                                     <color key="titleColor" red="0.29411764709999999" green="0.78823529410000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWR-jW-ahr" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kjZ-Qf-fwc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="tVJ-Yg-Nuc" firstAttribute="top" secondItem="xWR-jW-ahr" secondAttribute="bottom" id="BeB-aF-85q"/>
                             <constraint firstItem="Cj8-xt-1DP" firstAttribute="trailing" secondItem="zNl-Bo-aR2" secondAttribute="trailingMargin" id="Ln7-4R-SCt"/>
                             <constraint firstItem="cu0-GW-XXS" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" constant="1" id="MN9-Mj-1f6"/>
-                            <constraint firstAttribute="bottom" secondItem="Cj8-xt-1DP" secondAttribute="bottom" constant="20" symbolic="YES" id="O2W-Gg-2sf"/>
+                            <constraint firstItem="Xjg-0N-l7g" firstAttribute="top" secondItem="Cj8-xt-1DP" secondAttribute="bottom" constant="20" id="PTl-He-bia"/>
                             <constraint firstItem="Cj8-xt-1DP" firstAttribute="leading" secondItem="zNl-Bo-aR2" secondAttribute="leadingMargin" id="Rc2-Fo-XsJ"/>
                             <constraint firstItem="cxk-8c-flM" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" constant="1" id="Sx3-QX-YWK"/>
+                            <constraint firstItem="Cj8-xt-1DP" firstAttribute="top" secondItem="6a3-Ml-BAH" secondAttribute="bottom" constant="8" id="Wpn-KY-bWv"/>
                             <constraint firstItem="Xjg-0N-l7g" firstAttribute="centerX" secondItem="zNl-Bo-aR2" secondAttribute="centerX" id="iDA-TR-1ou"/>
+                            <constraint firstItem="xWR-jW-ahr" firstAttribute="leading" secondItem="zNl-Bo-aR2" secondAttribute="leadingMargin" constant="-20" id="oaU-EN-R2N"/>
                             <constraint firstItem="cu0-GW-XXS" firstAttribute="top" secondItem="cxk-8c-flM" secondAttribute="bottom" constant="20" id="rUe-r1-dOY"/>
-                            <constraint firstItem="Xjg-0N-l7g" firstAttribute="top" secondItem="6a3-Ml-BAH" secondAttribute="bottom" constant="46" id="ryk-KY-rM6"/>
-                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="49" id="txj-1R-8Dl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xWR-jW-ahr" secondAttribute="trailing" constant="-20" id="rop-tb-Qpa"/>
+                            <constraint firstItem="cxk-8c-flM" firstAttribute="top" secondItem="Xjg-0N-l7g" secondAttribute="bottom" constant="32" id="txj-1R-8Dl"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MIP Calendario" id="Srl-lK-uj6">
@@ -332,6 +342,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="bannerView" destination="xWR-jW-ahr" id="HSu-n8-9Q5"/>
                         <outlet property="btnNuevoRol" destination="cxk-8c-flM" id="zAw-vi-MTM"/>
                         <outlet property="btnRolActual" destination="cu0-GW-XXS" id="AXL-9V-IRO"/>
                         <outlet property="imgLogo" destination="Xjg-0N-l7g" id="fJL-Ml-T2n"/>

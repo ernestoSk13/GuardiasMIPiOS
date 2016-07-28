@@ -12,6 +12,7 @@
 		0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB56B1D24CA73000B5C0D /* CoreData.framework */; };
 		0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */; };
 		0E0EB5701D24D442000B5C0D /* TurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56F1D24D442000B5C0D /* TurnView.swift */; };
+		0E1B4AD11D49C2AA002AEAAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E1B4AD01D49C2AA002AEAAE /* GoogleService-Info.plist */; };
 		0E282A7A1D2CDDAE00DB300C /* GMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */; };
 		0E282A7F1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7B1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift */; };
 		0E282A801D2DFCD100DB300C /* Fecha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7C1D2DFCD100DB300C /* Fecha.swift */; };
@@ -44,9 +45,7 @@
 		0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */; };
 		0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */; };
 		0EE3445A1D2E2D9E00BD2F55 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */; };
-		22212435CF70BD2FE95F0F3B /* Pods_GuardiasMIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */; };
 		38C7DCB31979700543820733 /* Pods_GuardiasMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61192C4D7D283D1A29AC55E /* Pods_GuardiasMIP.framework */; };
-		3F766EBBAC079D2B7FB61DC7 /* Pods_GuardiasMIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9614F963C22C0B4905341 /* Pods_GuardiasMIPTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,25 +65,13 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		0E8CF1511D20E32F00B788BA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
 		0E0EB5651D238D49000B5C0D /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		0E0EB56B1D24CA73000B5C0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCreacionTurnosViewController.swift; sourceTree = "<group>"; };
 		0E0EB56F1D24D442000B5C0D /* TurnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnView.swift; sourceTree = "<group>"; };
+		0E1B4AD01D49C2AA002AEAAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMMainViewController.swift; sourceTree = "<group>"; };
 		0E282A7B1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fecha+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0E282A7C1D2DFCD100DB300C /* Fecha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fecha.swift; sourceTree = "<group>"; };
@@ -104,6 +91,7 @@
 		0E46ED5F1D281B9D00016E30 /* UIColor+customProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+customProperties.m"; sourceTree = "<group>"; };
 		0E46ED611D28232E00016E30 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		0E62862F1D2CC450002AB31B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0E669EBB1D49AE1200D4901E /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = "../../Library/Developer/Xcode/DerivedData/GuardiasMIP-bmkahshiodxlwefnioqflfeibtmc/Build/Products/Debug-iphonesimulator/Firebase/Firebase.framework"; sourceTree = "<group>"; };
 		0E8CF1141D20D77200B788BA /* GuardiasMIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardiasMIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CF1171D20D77200B788BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8CF1191D20D77200B788BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,13 +119,9 @@
 		0EE344581D2E2D9E00BD2F55 /* ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator.h; sourceTree = "<group>"; };
 		0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicator.m; sourceTree = "<group>"; };
 		5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardiasMIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69C39BDDADD779CB7CF4034A /* Pods-GuardiasMIPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPTests/Pods-GuardiasMIPTests.release.xcconfig"; sourceTree = "<group>"; };
 		74B9614F963C22C0B4905341 /* Pods_GuardiasMIPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardiasMIPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C6218DC9E4C33DBEF57DF4 /* Pods-GuardiasMIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIP/Pods-GuardiasMIP.debug.xcconfig"; sourceTree = "<group>"; };
-		856B02603C14EC473161EC9D /* Pods-GuardiasMIPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPTests/Pods-GuardiasMIPTests.debug.xcconfig"; sourceTree = "<group>"; };
-		98E0CCEDD323747E12C9CE43 /* Pods-GuardiasMIPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPUITests/Pods-GuardiasMIPUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9CC5F038135F1077DE70EA9E /* Pods-GuardiasMIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIP.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIP/Pods-GuardiasMIP.release.xcconfig"; sourceTree = "<group>"; };
-		A201C40D9CD7AA5ABEEBB459 /* Pods-GuardiasMIPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPUITests/Pods-GuardiasMIPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D61192C4D7D283D1A29AC55E /* Pods_GuardiasMIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardiasMIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -155,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F766EBBAC079D2B7FB61DC7 /* Pods_GuardiasMIPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22212435CF70BD2FE95F0F3B /* Pods_GuardiasMIPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +232,7 @@
 				0E8CF1211D20D77200B788BA /* Assets.xcassets */,
 				0E8CF1231D20D77200B788BA /* LaunchScreen.storyboard */,
 				0E8CF1261D20D77200B788BA /* Info.plist */,
+				0E1B4AD01D49C2AA002AEAAE /* GoogleService-Info.plist */,
 				0E8CF11E1D20D77200B788BA /* GuardiasMIP.xcdatamodeld */,
 				0E8CF14C1D20E2BD00B788BA /* Frameworks */,
 			);
@@ -353,10 +336,6 @@
 			children = (
 				79C6218DC9E4C33DBEF57DF4 /* Pods-GuardiasMIP.debug.xcconfig */,
 				9CC5F038135F1077DE70EA9E /* Pods-GuardiasMIP.release.xcconfig */,
-				856B02603C14EC473161EC9D /* Pods-GuardiasMIPTests.debug.xcconfig */,
-				69C39BDDADD779CB7CF4034A /* Pods-GuardiasMIPTests.release.xcconfig */,
-				A201C40D9CD7AA5ABEEBB459 /* Pods-GuardiasMIPUITests.debug.xcconfig */,
-				98E0CCEDD323747E12C9CE43 /* Pods-GuardiasMIPUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -364,6 +343,7 @@
 		F8CB8BFD47F9F57BE05FC391 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E669EBB1D49AE1200D4901E /* Firebase.framework */,
 				D61192C4D7D283D1A29AC55E /* Pods_GuardiasMIP.framework */,
 				74B9614F963C22C0B4905341 /* Pods_GuardiasMIPTests.framework */,
 				5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */,
@@ -382,9 +362,9 @@
 				0E8CF1101D20D77200B788BA /* Sources */,
 				0E8CF1111D20D77200B788BA /* Frameworks */,
 				0E8CF1121D20D77200B788BA /* Resources */,
-				0E8CF1511D20E32F00B788BA /* Embed Frameworks */,
 				7F24213A3C6F3525C8D4DB8E /* [CP] Embed Pods Frameworks */,
 				5F1203204C1466D2E4D7F112 /* [CP] Copy Pods Resources */,
+				0E1B4AD21D49C9B3002AEAAE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -486,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */,
+				0E1B4AD11D49C2AA002AEAAE /* GoogleService-Info.plist in Resources */,
 				0E456C5B1D2B7D8B00855FD1 /* EPCalendarCell1.xib in Resources */,
 				0E8CF1251D20D77200B788BA /* LaunchScreen.storyboard in Resources */,
 				0E8CF1221D20D77200B788BA /* Assets.xcassets in Resources */,
@@ -512,6 +493,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E1B4AD21D49C9B3002AEAAE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		211AD9E5991BE2BAF0FA7424 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -851,7 +845,6 @@
 		};
 		0E8CF1431D20D77200B788BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 856B02603C14EC473161EC9D /* Pods-GuardiasMIPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GuardiasMIPTests/Info.plist;
@@ -864,7 +857,6 @@
 		};
 		0E8CF1441D20D77200B788BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69C39BDDADD779CB7CF4034A /* Pods-GuardiasMIPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GuardiasMIPTests/Info.plist;
@@ -877,7 +869,6 @@
 		};
 		0E8CF1461D20D77200B788BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A201C40D9CD7AA5ABEEBB459 /* Pods-GuardiasMIPUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GuardiasMIPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -889,7 +880,6 @@
 		};
 		0E8CF1471D20D77200B788BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98E0CCEDD323747E12C9CE43 /* Pods-GuardiasMIPUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GuardiasMIPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "guardiasmip-264b6",
+  "private_key_id": "5f2ced3f7b7c8d3d7742e4737c4e52fe2a8d91fe",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCDzq9jqFmzZgSc\nZU0S2sZATI6fbCM6gpthoN+XVDgW8HC+JePw84Nye/r7/Gg8s6MrSDQhceUry1Ws\nHRn+hmmODlS2sTHwGmLkmpCxQNLjqWMIu+kQw89qdjRQsY1KFyG0f78Q0a4HfKBC\nHRIf9ymujqB56LqoO35JE9YPCqiORleJtpIi/ixZ+w1/sVOJxx8dVXrP7FOJXaIc\nc/HeJ2aRrh+wf0I1rZbiVmvSXa4pZLg7xyJWeL4odrUcrHRqBfvwnihLgPD4dQol\n1Fatn+3plGplF48T43Zkn0e1QeGLhTkDsVB5UoK2wsQWIPfvSPC8hGqG98pg0jch\nj6BllAa3AgMBAAECggEAI13lH9d/YizAlfp0iNedFIm2Rz6r4TpEWRjihed6OWWA\nyvS9ydx9a82qlcyvZ4JICQgRvNujw3GG5mzUmcAVOKHNx0uae7OIz5BNvNIJBD9i\nLGjHa9EuqYFYHkLWB4hXaehRK0En8ihVlAfa4irey1DH7I4u748vHoqtCFIy0iHW\nxN3xGuFKqQfkISVud7f4ZOolLGiwDMskeSQNEGPX3EAseaA3qL/dIvojS9f+ZFIv\nb+1NWyQpqt/9FBgyDerhGh7Y5nnsjMtiG4VMsxBVyP7A7+gUkot68xDui2oqb+ZS\nvnMkc+TOq1nuBwkkXQ+M5lWhRDCxJqsXM395uc2bmQKBgQDlBYJFGE8hYKuxlrJq\nXeMLgYkiyRHy0B46gTPnHKkb5Sir5McITZQtyyY61Qzpm1NxOKxutXoqNCq7YQCr\nwHkaCQ8tqjbyjlwQ23vsCJDVE9wBJGVLWyAs5yhYM6blDNz7nz/jvT5OdF+BVQ2j\ni0jzBdCOhJ2avcFejk1ZyPCQMwKBgQCTVYk3pO7fCJZ1EMntAzW64U3dJn1CUd6X\nTvWXEpi159+KVZKPlIPUg+51aWdFVEdoM9GWhXGD2k0rgVVsp6xe7W0SzlGuEt4p\nVS9f8H9Pq2SPEH65BRbE6xKM225/6FnK7VyFZSop68J+Jpl9NToQHdKgQHTshR3k\nSSZHHgnbbQKBgAKEHPpFWhkzxq8cyLkCbwwhUDBhpSDVyH88DCXt2q3Dxr6ctNMS\nhx45rSHYVVv7qN8FkF9m/wCXsiB84FUCuFHg55nI1PG1Pq2wu5vMPEsa/L/GdpZt\nWd0kbP0LFDpP+d2J0lneKmESRjpVhODXFuYUmkX2jwS0MPuo9JCX9IyhAoGAHZ3W\nJX9cHS1mwUWMsb4xcM2Vj10LVOeMLTJMIAA2/moL/4zQF1itX2zd5HA5uDAG4qV3\n/h/4/55EYPhwqZTTC4oCoQMkXC+ixQBAs7JuhR9Y6YFRV/Pz7cWrRvFdNw0H78jj\nDlWVsjOYNy+fLxIiB9dW3avXVSw1JAyoSyd4p8kCgYEAmqFuXwpBU0cV7Rwoaa/x\nd7toW2SvaG9gDDrnIgTioQmlUByMaYzd4T7MWuQVHwYxbwqeKiJtiU/4PUuvvrT8\nVTIPZRDdmmc9EGuzh+Dkjm4XR5FdliYZC2GI7AfTWwBJ/bzOtc9bycvDVjNe2u5J\nVAeKlfXYYvqT/A9qf2V2wjo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "symbol-upload-service-account@guardiasmip-264b6.iam.gserviceaccount.com",
+  "client_id": "111439165616204468267",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/symbol-upload-service-account%40guardiasmip-264b6.iam.gserviceaccount.com"
+}
