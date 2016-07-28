@@ -12,6 +12,7 @@
 		0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB56B1D24CA73000B5C0D /* CoreData.framework */; };
 		0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */; };
 		0E0EB5701D24D442000B5C0D /* TurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56F1D24D442000B5C0D /* TurnView.swift */; };
+		0E146A361D3DE9FE0092E260 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E146A351D3DE9FE0092E260 /* UserNotifications.framework */; };
 		0E282A7A1D2CDDAE00DB300C /* GMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */; };
 		0E282A7F1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7B1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift */; };
 		0E282A801D2DFCD100DB300C /* Fecha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7C1D2DFCD100DB300C /* Fecha.swift */; };
@@ -29,6 +30,7 @@
 		0E46ED601D281B9D00016E30 /* UIColor+customProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E46ED5F1D281B9D00016E30 /* UIColor+customProperties.m */; };
 		0E46ED621D28232E00016E30 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E46ED611D28232E00016E30 /* UIViewExtensions.swift */; };
 		0E6286301D2CC450002AB31B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E62862F1D2CC450002AB31B /* ColorExtension.swift */; };
+		0E8C4EE11D401072006E687A /* GMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8C4EE01D401072006E687A /* GMSettingsViewController.swift */; };
 		0E8CF1181D20D77200B788BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF1171D20D77200B788BA /* AppDelegate.swift */; };
 		0E8CF11A1D20D77200B788BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF1191D20D77200B788BA /* ViewController.swift */; };
 		0E8CF11D1D20D77200B788BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CF11B1D20D77200B788BA /* Main.storyboard */; };
@@ -42,6 +44,7 @@
 		0E8D00E41D2F7BD90086D5BF /* CustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E01D2F7BD90086D5BF /* CustomPickerViewController.xib */; };
 		0E8D00E51D2F7BD90086D5BF /* CustomDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */; };
 		0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */; };
+		0EA6E4651D400F6300A39659 /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */; };
 		0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */; };
 		0EE3445A1D2E2D9E00BD2F55 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */; };
 		22212435CF70BD2FE95F0F3B /* Pods_GuardiasMIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */; };
@@ -85,6 +88,7 @@
 		0E0EB56B1D24CA73000B5C0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCreacionTurnosViewController.swift; sourceTree = "<group>"; };
 		0E0EB56F1D24D442000B5C0D /* TurnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnView.swift; sourceTree = "<group>"; };
+		0E146A351D3DE9FE0092E260 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMMainViewController.swift; sourceTree = "<group>"; };
 		0E282A7B1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fecha+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0E282A7C1D2DFCD100DB300C /* Fecha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fecha.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		0E46ED5F1D281B9D00016E30 /* UIColor+customProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+customProperties.m"; sourceTree = "<group>"; };
 		0E46ED611D28232E00016E30 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		0E62862F1D2CC450002AB31B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0E8C4EE01D401072006E687A /* GMSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMSettingsViewController.swift; sourceTree = "<group>"; };
 		0E8CF1141D20D77200B788BA /* GuardiasMIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardiasMIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CF1171D20D77200B788BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8CF1191D20D77200B788BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 		0E8D00E11D2F7BD90086D5BF /* CustomDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDatePickerViewController.h; sourceTree = "<group>"; };
 		0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDatePickerViewController.m; sourceTree = "<group>"; };
 		0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePickerViewController.xib; sourceTree = "<group>"; };
+		0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
 		0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		0EE344581D2E2D9E00BD2F55 /* ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator.h; sourceTree = "<group>"; };
 		0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicator.m; sourceTree = "<group>"; };
@@ -146,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E146A361D3DE9FE0092E260 /* UserNotifications.framework in Frameworks */,
 				0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */,
 				38C7DCB31979700543820733 /* Pods_GuardiasMIP.framework in Frameworks */,
 			);
@@ -344,6 +351,8 @@
 				0EE2F7C61D3DD67E00AFB145 /* Menu */,
 				0EE2F7C51D3DD65800AFB145 /* Calendario Actual */,
 				0EE2F7C41D3DD63B00AFB145 /* Creacion De Turnos */,
+				0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */,
+				0E8C4EE01D401072006E687A /* GMSettingsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -364,6 +373,7 @@
 		F8CB8BFD47F9F57BE05FC391 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0E146A351D3DE9FE0092E260 /* UserNotifications.framework */,
 				D61192C4D7D283D1A29AC55E /* Pods_GuardiasMIP.framework */,
 				74B9614F963C22C0B4905341 /* Pods_GuardiasMIPTests.framework */,
 				5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */,
@@ -449,13 +459,16 @@
 					0E8CF1131D20D77200B788BA = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 49VFMFM852;
+						LastSwiftMigration = 0800;
 					};
 					0E8CF12A1D20D77200B788BA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0E8CF1131D20D77200B788BA;
 					};
 					0E8CF1351D20D77200B788BA = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 0E8CF1131D20D77200B788BA;
 					};
 				};
@@ -655,8 +668,10 @@
 				0E282A821D2DFCD100DB300C /* Turno.swift in Sources */,
 				0E456C5C1D2B7D8B00855FD1 /* EPCalendarHeaderView.swift in Sources */,
 				0E46ED601D281B9D00016E30 /* UIColor+customProperties.m in Sources */,
+				0E8C4EE11D401072006E687A /* GMSettingsViewController.swift in Sources */,
 				0E456C581D2B7D8B00855FD1 /* EPCalendarPicker.swift in Sources */,
 				0E456C5E1D2B7D8B00855FD1 /* EPExtensions.swift in Sources */,
+				0EA6E4651D400F6300A39659 /* AcercaDeViewController.swift in Sources */,
 				0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */,
 				0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */,
 				0E8D00DC1D2F7BC10086D5BF /* CoreDataHelper.m in Sources */,
@@ -822,8 +837,11 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.guardiasmip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5c51dbd-d5e6-40ae-acd2-fafce1da875a";
+				PROVISIONING_PROFILE_SPECIFIER = 49VFMFM852/SKGenericDev;
 				SWIFT_OBJC_BRIDGING_HEADER = "GuardiasMIP/GuardiasMIP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -846,6 +864,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "65ab640d-6287-4806-8695-96974501d850";
 				SWIFT_OBJC_BRIDGING_HEADER = "GuardiasMIP/GuardiasMIP-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -858,6 +877,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuardiasMIP.app/GuardiasMIP";
 			};
 			name = Debug;
@@ -871,6 +891,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuardiasMIP.app/GuardiasMIP";
 			};
 			name = Release;
@@ -883,6 +904,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = GuardiasMIP;
 			};
 			name = Debug;
@@ -895,6 +917,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = GuardiasMIP;
 			};
 			name = Release;

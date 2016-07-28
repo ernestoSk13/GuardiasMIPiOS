@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import UserNotifications
 //import SuperCoreData.CoreDataHelper
 
 @UIApplicationMain
@@ -20,6 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         startCDHelper()
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.currentNotificationCenter().requestAuthorizationWithOptions([.Alert, .Badge]) { (granted, error) in
+                
+            }
+        } else {
+            
+        }
         
         return true
     }

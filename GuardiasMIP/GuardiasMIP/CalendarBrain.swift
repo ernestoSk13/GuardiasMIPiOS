@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 //import SuperCoreData.CoreDataHelper
 
 class CalendarBrain: NSObject {
@@ -78,6 +79,52 @@ class CalendarBrain: NSObject {
         
     }
     
+    class func scheduleNotificationsForTurn(turno: Turno) {
+//        if #available(iOS 10.0, *) {
+//            let content = UNMutableNotificationContent()
+//            content.title = "Hoy toca guardia al grupo: \(turno.idTurno!)"
+//            content.body = "Para ver el calendario accede a la aplicación dando tap a esta notificación."
+//            
+//            
+//            for fecha  in turno.fechaTurno! {
+//                if let _fecha = fecha as? Fecha {
+//                    print("Fecha -----> \(_fecha.fechaTurno!)")
+//                    let fechaFormateada = NSDate(fromString: _fecha.fechaTurno!,  format: DateFormat.ISO8601(.Date))
+//                    
+//                    if fechaFormateada.isToday() {
+//                        let dateComponents = NSDateComponents()
+//                        dateComponents.day = fechaFormateada.day()
+//                        dateComponents.year = fechaFormateada.year()
+//                        dateComponents.month = fechaFormateada.month()
+//                        dateComponents.hour = 1
+//                        dateComponents.minute = 7
+//                        
+//                        let trigger = UNCalendarNotificationTrigger(dateMatchingComponents: dateComponents, repeats: false)
+//                        let request = UNNotificationRequest.init(identifier: "notificacionMIP", content: content, trigger: trigger)
+//                        
+//                        // Schedule the notification.
+//                        let center = UNUserNotificationCenter.currentNotificationCenter()
+//                        center.addNotificationRequest(request, withCompletionHandler: { (error) in
+//                            
+//                            print("Error \(error)")
+//                            
+//                        })
+//                        
+//                    }
+//                    
+//                   
+//                }
+//                
+//                
+//                
+//            }
+//            
+//            
+//
+//        } else {
+//            // Fallback on earlier versions
+//        }
+    }
   
     
     

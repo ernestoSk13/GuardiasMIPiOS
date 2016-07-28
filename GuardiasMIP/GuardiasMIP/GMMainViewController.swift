@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 //import SuperCoreData.CoreDataHelper
 
 class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
@@ -75,6 +76,10 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         }
     }
     
+   
+    
+    
+    
     func turnoActual() {
         let currentDate = NSDate()
         let fecha = currentDate.toString(format: DateFormat.ISO8601(.Date))
@@ -82,6 +87,8 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         if correspodingDate != nil {
             lblTurnoActual.hidden = false
             lblTurnoActual.text = "Hoy toca guardia al grupo: \(correspodingDate!.idTurno!)"
+            CalendarBrain.scheduleNotificationsForTurn((correspodingDate?.turnoFecha!)!)
+            
         }
     }
     
