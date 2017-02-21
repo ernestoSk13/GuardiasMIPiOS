@@ -9,7 +9,7 @@
 #import "ActivityIndicator.h"
 
 @interface ActivityIndicator ()
-
+@property BOOL finished;
 @end
 
 @implementation ActivityIndicator
@@ -17,21 +17,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view setBackgroundColor:[[UIColor blackColor] colorWithAlphaComponent:0.6]];
-    self.loadingIndicator = [[UIActivityIndicatorView alloc]init];
-    self.loadingIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
-    [self.loadingIndicator setFrame:CGRectMake(self.view.center.x - 50, self.view.center.y - 150, 100, 100)];
+    self.penguinImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"drPing.png"]];
+    [self.penguinImage setFrame:CGRectMake(self.view.center.x - 50, self.view.center.y - 150, 100, 100)];
     
-    self.lblLoading = [[UILabel alloc]initWithFrame:CGRectMake(10, self.loadingIndicator.frame.origin.y + self.loadingIndicator.frame.size.height + 20, self.view.frame.size.width - 20, 50)];
+    self.lblLoading = [[UILabel alloc]initWithFrame:CGRectMake(10, self.penguinImage.frame.origin.y + self.penguinImage.frame.size.height + 20, self.view.frame.size.width - 20, 50)];
     self.lblLoading.numberOfLines = 0;
     [self.lblLoading setTextAlignment:NSTextAlignmentCenter];
     [self.lblLoading setText:@"Cargando..."];
     [self.lblLoading setFont:[UIFont systemFontOfSize:20]];
     [self.lblLoading setTextColor:[UIColor whiteColor]];
     self.lblLoading.textAlignment = NSTextAlignmentCenter;
-    [self.view addSubview:self.loadingIndicator];
     [self.view addSubview:self.lblLoading];
-    
-    // Do any additional setup after loading the view.
+    [self.view addSubview:self.penguinImage];
+    self.finished = NO;
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -47,18 +45,32 @@
 
 -(void)startAnimating
 {
-    [self.loadingIndicator startAnimating];
     if (self.msgLoading.length < 1) {
        self.msgLoading = @"Cargando...";
     }
     [self.lblLoading setText:self.msgLoading];
-    
+        [self penguinDanceRight];
 }
 
+- (void)penguinDanceRight {
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation"];
+    animation.duration = 0.5;
+    animation.additive = YES;
+    animation.removedOnCompletion = NO;
+    animation.cumulative = YES;
+    animation.repeatCount = 10;
+    animation.autoreverses = YES;
+    animation.fillMode = kCAFillModeForwards;
+    animation.fromValue = [NSNumber numberWithFloat:0];
+    animation.toValue = [NSNumber numberWithFloat:((360*M_PI) * 0.066/180)];
+    
+    [self.penguinImage.layer addAnimation:animation forKey:@"transform.rotation"];
+}
 
 -(void)stopAnimationWithSuccess:(AnimationSuccessBlock)success{
-    [self.loadingIndicator stopAnimating];
+   
     [self dismissViewControllerAnimated:NO completion:^{
+        [self.penguinImage.layer removeAllAnimations];
         success(YES);
     }];
 }

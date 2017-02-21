@@ -94,7 +94,14 @@ class GMCreacionTurnosViewController: UIViewController, UIGestureRecognizerDeleg
                     yPosition = CGFloat(lastTurn!.frame.origin.y + lastTurn!.frame.size.height + 20)
                     xPosition = CGFloat(20)
                 }
-                let newTurnView = TurnView(turnName: txtTurno.text! , order: turns.count, frame: CGRectMake(xPosition, yPosition, 40, 40))
+                let initialFrame = CGRectMake(self.view.frame.width, yPosition, 0, 40)
+                let lastFrame = CGRectMake(xPosition, yPosition, 40, 40)
+                
+                let newTurnView = TurnView(turnName: txtTurno.text! , order: turns.count, frame: initialFrame)
+                UIView.animateWithDuration(1.0, delay: 0.5, options: [.CurveEaseInOut], animations: { 
+                        newTurnView.frame = lastFrame
+                    }, completion: nil)
+                
                 self.view.addSubview(newTurnView)
                 let tap = UITapGestureRecognizer(target: self, action: #selector(GMCreacionTurnosViewController.handleTap(_:)))
                 newTurnView.addGestureRecognizer(tap)

@@ -25,7 +25,7 @@ class TurnView: UIView {
     
     
     func prepareTurnLabel(text: String!) {
-        turnLabel.frame = CGRectMake( 0, 0, self.frame.width, self.frame.height)
+        turnLabel.frame = CGRectMake( 0, 0, self.frame.height, self.frame.height)
         turnLabel.text = text
         turnLabel.textColor = viewColor
         turnLabel.textAlignment = .Center

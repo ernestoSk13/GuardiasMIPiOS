@@ -45,6 +45,7 @@
 		0E8D00E51D2F7BD90086D5BF /* CustomDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */; };
 		0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */; };
 		0EA6E4651D400F6300A39659 /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */; };
+		0EB11F041E5A274E0080C5FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB11F031E5A274E0080C5FB /* Constants.swift */; };
 		0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */; };
 		0EE3445A1D2E2D9E00BD2F55 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */; };
 		22212435CF70BD2FE95F0F3B /* Pods_GuardiasMIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */; };
@@ -133,6 +134,7 @@
 		0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDatePickerViewController.m; sourceTree = "<group>"; };
 		0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePickerViewController.xib; sourceTree = "<group>"; };
 		0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
+		0EB11F031E5A274E0080C5FB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		0EE344581D2E2D9E00BD2F55 /* ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator.h; sourceTree = "<group>"; };
 		0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicator.m; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				0EE344581D2E2D9E00BD2F55 /* ActivityIndicator.h */,
 				0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */,
 				0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */,
+				0EB11F031E5A274E0080C5FB /* Constants.swift */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 49VFMFM852;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					0E8CF12A1D20D77200B788BA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -657,6 +661,7 @@
 				0E282A7F1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift in Sources */,
 				0E46ED621D28232E00016E30 /* UIViewExtensions.swift in Sources */,
 				0E8CF11A1D20D77200B788BA /* ViewController.swift in Sources */,
+				0EB11F041E5A274E0080C5FB /* Constants.swift in Sources */,
 				0E8CF1201D20D77200B788BA /* GuardiasMIP.xcdatamodeld in Sources */,
 				0E8D00E51D2F7BD90086D5BF /* CustomDatePickerViewController.m in Sources */,
 				0E8CF1181D20D77200B788BA /* AppDelegate.swift in Sources */,
@@ -826,7 +831,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Ernesto Sanchez Kuri (49VFMFM852)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -837,8 +844,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.guardiasmip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b5c51dbd-d5e6-40ae-acd2-fafce1da875a";
-				PROVISIONING_PROFILE_SPECIFIER = 49VFMFM852/SKGenericDev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GuardiasMIP/GuardiasMIP-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 2.3;
@@ -852,6 +859,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Ernesto Sanchez Kuri (49VFMFM852)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -862,7 +871,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.guardiasmip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "65ab640d-6287-4806-8695-96974501d850";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GuardiasMIP/GuardiasMIP-Bridging-Header.h";
 				SWIFT_VERSION = 2.3;
 			};

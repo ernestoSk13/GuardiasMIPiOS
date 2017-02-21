@@ -31,8 +31,25 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(imageDancing))
+        imgLogo.userInteractionEnabled = true
+        imgLogo.addGestureRecognizer(tap)
+        rateMe()
+    }
+    
+    
+    func imageDancing() {
+        let dancingAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        dancingAnimation.duration = 0.5
+        dancingAnimation.additive = true
+        dancingAnimation.removedOnCompletion = true
+        dancingAnimation.repeatCount = 3.0
+        dancingAnimation.autoreverses = true
+        dancingAnimation.fillMode = kCAFillModeForwards
+        dancingAnimation.fromValue = NSNumber.init(float: 0)
+        dancingAnimation.toValue = NSNumber.init(float: (360 * 3.141516) * 0.066/180)
         
-        
+        self.imgLogo.layer.addAnimation(dancingAnimation, forKey: "transform.rotation")
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -135,5 +152,70 @@ class GMMainViewController: UIViewController, EPCalendarPickerDelegate {
         let navigationController = UINavigationController(rootViewController: calendarPicker)
         self.presentViewController(navigationController, animated: true, completion: nil)
         
+    }
+    
+    //MARK: Rate me
+    
+    var iMinSessions = 3
+    var iTryAgainSessions = 6
+    var facebookSessions = 9
+    
+    func rateMe() {
+        let neverRate = NSUserDefaults.standardUserDefaults().boolForKey("neverRate")
+        let neverRateFacebook = NSUserDefaults.standardUserDefaults().boolForKey("neverRateFacebook")
+        var numLaunches = NSUserDefaults.standardUserDefaults().integerForKey("numLaunches") + 1
+        
+        if (!neverRate && (numLaunches == iMinSessions || numLaunches >= (iMinSessions + iTryAgainSessions + 1)))
+        {
+            showRateMe()
+            numLaunches = iMinSessions + 1
+        }
+        
+        if (!neverRateFacebook && numLaunches == facebookSessions || numLaunches == facebookSessions * 2) {
+            showFacebookPrompt()
+        }
+        
+        
+        NSUserDefaults.standardUserDefaults().setInteger(numLaunches, forKey: "numLaunches")
+    }
+    
+    
+    func showFacebookPrompt() {
+        let alert = UIAlertController(title: "Ya tenemos página en Facebook", message: "Nos gustaría saber tú opinión y sugerencias en nuestra página de Facebook", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ir a página de Facebook", style: UIAlertActionStyle.Default, handler: { alertAction in
+            if (UIApplication.sharedApplication().canOpenURL(NSURL(string :"fb://profile/1824677437770240")!)) {
+                UIApplication.sharedApplication().openURL(NSURL(string: "fb://profile/1824677437770240")!)
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRateFacebook")
+            } else {
+                UIApplication.sharedApplication().openURL(NSURL(string: "https://www.facebook.com/mipcalendario/?ref=aymt_homepage_panel")!)
+                NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRateFacebook")
+            }
+            
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "No gracias", style: UIAlertActionStyle.Default, handler: { alertAction in
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRateFacebook")
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Tal vez después", style: UIAlertActionStyle.Default, handler: { alertAction in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func showRateMe() {
+        let alert = UIAlertController(title: "Ayúdanos a mejorar", message: "Gracias por utilizar MIP Calendario. Nos gustaría saber tú opinión y sugerencias calificándonos en el App Store", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Calificar MIP Calendario", style: UIAlertActionStyle.Default, handler: { alertAction in
+            UIApplication.sharedApplication().openURL(NSURL(string : "https://itunes.apple.com/es/app/mip-calendario/id1132442892")!)
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "No gracias", style: UIAlertActionStyle.Default, handler: { alertAction in
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "neverRate")
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        alert.addAction(UIAlertAction(title: "Tal vez después", style: UIAlertActionStyle.Default, handler: { alertAction in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }

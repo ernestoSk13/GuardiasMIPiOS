@@ -36,8 +36,9 @@ extension UICollectionView {
         
         if indexPath.section <= sections{
             let attributes = self.layoutAttributesForSupplementaryElementOfKind(UICollectionElementKindSectionHeader, atIndexPath: indexPath)
-            let topOfHeader = CGPointMake(0, attributes!.frame.origin.y - self.contentInset.top)
+            let topOfHeader = CGPointMake(0, attributes!.frame.origin.y - BlurredViewHeight)
             self.setContentOffset(topOfHeader, animated:false)
+            self.reloadData()
         }
     }
 }

@@ -72,9 +72,7 @@ public class EPCalendarPicker: UICollectionViewController {
         
         inititlizeBarButtons()
 
-        dispatch_async(dispatch_get_main_queue()) { () -> Void in
-            self.scrollToToday()
-        }
+        
         
         if backgroundImage != nil {
             self.collectionView!.backgroundView =  UIImageView(image: backgroundImage)
@@ -90,6 +88,9 @@ public class EPCalendarPicker: UICollectionViewController {
        // self.collectionView?.frame = CGRectMake(0, collectionViewFrameOrigin, self.view.frame.size.width, self.view.frame.size.height - collectionViewFrameOrigin)
         self.view.backgroundColor = UIColor.whiteColor()
         
+        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+            self.scrollToToday()
+        }
         
     }
     
@@ -105,7 +106,13 @@ public class EPCalendarPicker: UICollectionViewController {
     func placeExistingTurns() {
          var collectionViewFrameOrigin = CGFloat(400)
         
-        let blurEffect = UIBlurEffect(style: .ExtraLight)
+        var style = UIBlurEffectStyle.Light
+        
+        if #available(iOS 10, *) {
+            style = .Light
+        }
+        
+        let blurEffect = UIBlurEffect(style: style)
         let blurredEffectView = UIVisualEffectView(effect: blurEffect)
         blurredEffectView.frame = CGRectMake(0, 0, self.view.frame.size.width, collectionViewFrameOrigin)
         view.addSubview(blurredEffectView)
@@ -124,13 +131,20 @@ public class EPCalendarPicker: UICollectionViewController {
                 yPosition = CGFloat(lastTurn!.frame.origin.y + lastTurn!.frame.size.height + 20)
                 xPosition = CGFloat(20)
             }
-            let newTurnView = TurnView(turnName: turno.idTurno! , order: Int(turno.ordenTurno!)!, frame: CGRectMake(xPosition, yPosition, 40, 40))
+            
+            let initialFrame = CGRectMake(blurredEffectView.frame.size.width, yPosition, 40, 40)
+            let finalFrame   = CGRectMake(xPosition, yPosition, 40, 40)
+            let newTurnView = TurnView(turnName: turno.idTurno! , order: Int(turno.ordenTurno!)!, frame: initialFrame)
+            
+            UIView.animateWithDuration(1.0, delay: 0.5, options: [.CurveEaseInOut], animations: {
+                newTurnView.frame = finalFrame
+                }, completion: nil)
+            
             blurredEffectView.addSubview(newTurnView)
-//            let tap = UITapGestureRecognizer(target: self, action: #selector(GMCreacionTurnosViewController.handleTap(_:)))
-//            newTurnView.addGestureRecognizer(tap)
             turnViews.append(newTurnView)
         }
         collectionViewFrameOrigin = turnViews.last!.frame.origin.y + turnViews.last!.frame.size.height + 15
+        BlurredViewHeight = collectionViewFrameOrigin
         blurredEffectView.frame = CGRectMake(0, 0, self.view.frame.size.width, collectionViewFrameOrigin)
         
     }
@@ -322,9 +336,15 @@ public class EPCalendarPicker: UICollectionViewController {
 //                            let cellColor = colorFromString(turnos[turnIndex].colorTurno!)
 //                            cell.setTodayCellColor(cellColor)
 //                            turnIndex += 1
+                        } else if currentDate.isLaterThanDate(NSDate(fromString: turnos[turnIndex].inicioTurno!, format: DateFormat.ISO8601(.Date))) && currentDate.isEarlierThanDate(NSDate(fromString: turnos[turnIndex].finTurno!, format: DateFormat.ISO8601(.Date))) {
+                            let fecha = cell.currentDate.toString(format: DateFormat.ISO8601(.Date))
+                            let correspodingDate = sharedHelper.singleInstanceOf("Fecha", where: "fechaTurno", isEqualTo: fecha) as? Fecha
+                            if correspodingDate != nil {
+                                let cellColor = colorFromString((correspodingDate?.turnoFecha!.colorTurno)!)
+                                cell.setTodayCellColor(cellColor)
+                            }
                         }
                     }
-                    
                 }
                
                 if startDate != nil {

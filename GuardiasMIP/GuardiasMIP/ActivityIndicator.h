@@ -12,6 +12,7 @@ typedef void (^AnimationSuccessBlock)(BOOL finished);
 
 @property (strong, nonatomic) IBOutlet UIView *activityContainer;
 @property (strong, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
+@property (strong, nonatomic) UIImageView *penguinImage;
 @property (strong, nonatomic) IBOutlet UILabel *lblLoading;
 @property (strong, nonatomic) NSString *msgLoading;
 
