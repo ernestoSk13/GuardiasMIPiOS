@@ -7,30 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0EB5581D2382FA000B5C0D /* EasyPickerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB5561D2382F0000B5C0D /* EasyPickerKit.framework */; };
+		0E0EB5591D2382FA000B5C0D /* EasyPickerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB5561D2382F0000B5C0D /* EasyPickerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E0EB55C1D2384B6000B5C0D /* DateUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */; };
+		0E0EB5631D238BD7000B5C0D /* Turno+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5611D238BD7000B5C0D /* Turno+CoreDataProperties.swift */; };
+		0E0EB5641D238BD7000B5C0D /* Turno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5621D238BD7000B5C0D /* Turno.swift */; };
 		0E0EB5661D238D49000B5C0D /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB5651D238D49000B5C0D /* MenuButton.swift */; };
-		0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0EB56B1D24CA73000B5C0D /* CoreData.framework */; };
-		0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */; };
-		0E0EB5701D24D442000B5C0D /* TurnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0EB56F1D24D442000B5C0D /* TurnView.swift */; };
-		0E146A361D3DE9FE0092E260 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E146A351D3DE9FE0092E260 /* UserNotifications.framework */; };
-		0E282A7A1D2CDDAE00DB300C /* GMMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */; };
-		0E282A7F1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7B1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift */; };
-		0E282A801D2DFCD100DB300C /* Fecha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7C1D2DFCD100DB300C /* Fecha.swift */; };
-		0E282A811D2DFCD100DB300C /* Turno+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7D1D2DFCD100DB300C /* Turno+CoreDataProperties.swift */; };
-		0E282A821D2DFCD100DB300C /* Turno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E282A7E1D2DFCD100DB300C /* Turno.swift */; };
-		0E456C501D2B7AB500855FD1 /* GMCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */; };
-		0E456C581D2B7D8B00855FD1 /* EPCalendarPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C511D2B7D8B00855FD1 /* EPCalendarPicker.swift */; };
-		0E456C591D2B7D8B00855FD1 /* EPCalendarConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C521D2B7D8B00855FD1 /* EPCalendarConstants.swift */; };
-		0E456C5A1D2B7D8B00855FD1 /* EPCalendarCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C531D2B7D8B00855FD1 /* EPCalendarCell1.swift */; };
-		0E456C5B1D2B7D8B00855FD1 /* EPCalendarCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E456C541D2B7D8B00855FD1 /* EPCalendarCell1.xib */; };
-		0E456C5C1D2B7D8B00855FD1 /* EPCalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C551D2B7D8B00855FD1 /* EPCalendarHeaderView.swift */; };
-		0E456C5D1D2B7D8B00855FD1 /* EPCalendarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E456C561D2B7D8B00855FD1 /* EPCalendarHeaderView.xib */; };
-		0E456C5E1D2B7D8B00855FD1 /* EPExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C571D2B7D8B00855FD1 /* EPExtensions.swift */; };
-		0E456C601D2B824E00855FD1 /* CalendarBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E456C5F1D2B824E00855FD1 /* CalendarBrain.swift */; };
-		0E46ED601D281B9D00016E30 /* UIColor+customProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E46ED5F1D281B9D00016E30 /* UIColor+customProperties.m */; };
-		0E46ED621D28232E00016E30 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E46ED611D28232E00016E30 /* UIViewExtensions.swift */; };
-		0E6286301D2CC450002AB31B /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E62862F1D2CC450002AB31B /* ColorExtension.swift */; };
-		0E8C4EE11D401072006E687A /* GMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8C4EE01D401072006E687A /* GMSettingsViewController.swift */; };
 		0E8CF1181D20D77200B788BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF1171D20D77200B788BA /* AppDelegate.swift */; };
 		0E8CF11A1D20D77200B788BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF1191D20D77200B788BA /* ViewController.swift */; };
 		0E8CF11D1D20D77200B788BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CF11B1D20D77200B788BA /* Main.storyboard */; };
@@ -39,18 +21,7 @@
 		0E8CF1251D20D77200B788BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E8CF1231D20D77200B788BA /* LaunchScreen.storyboard */; };
 		0E8CF1301D20D77200B788BA /* GuardiasMIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF12F1D20D77200B788BA /* GuardiasMIPTests.swift */; };
 		0E8CF13B1D20D77200B788BA /* GuardiasMIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF13A1D20D77200B788BA /* GuardiasMIPUITests.swift */; };
-		0E8D00DC1D2F7BC10086D5BF /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00DB1D2F7BC10086D5BF /* CoreDataHelper.m */; };
-		0E8D00E31D2F7BD90086D5BF /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00DF1D2F7BD90086D5BF /* CustomPickerViewController.m */; };
-		0E8D00E41D2F7BD90086D5BF /* CustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E01D2F7BD90086D5BF /* CustomPickerViewController.xib */; };
-		0E8D00E51D2F7BD90086D5BF /* CustomDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */; };
-		0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */; };
-		0EA6E4651D400F6300A39659 /* AcercaDeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */; };
-		0EB11F041E5A274E0080C5FB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB11F031E5A274E0080C5FB /* Constants.swift */; };
-		0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */; };
-		0EE3445A1D2E2D9E00BD2F55 /* ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */; };
-		22212435CF70BD2FE95F0F3B /* Pods_GuardiasMIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */; };
-		38C7DCB31979700543820733 /* Pods_GuardiasMIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61192C4D7D283D1A29AC55E /* Pods_GuardiasMIP.framework */; };
-		3F766EBBAC079D2B7FB61DC7 /* Pods_GuardiasMIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B9614F963C22C0B4905341 /* Pods_GuardiasMIPTests.framework */; };
+		0E8CF1491D20D8E800B788BA /* BlurredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8CF1481D20D8E800B788BA /* BlurredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				0E0EB5591D2382FA000B5C0D /* EasyPickerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,32 +56,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E0EB5561D2382F0000B5C0D /* EasyPickerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EasyPickerKit.framework; sourceTree = "<group>"; };
 		0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtilities.swift; sourceTree = "<group>"; };
+		0E0EB5611D238BD7000B5C0D /* Turno+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Turno+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0E0EB5621D238BD7000B5C0D /* Turno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turno.swift; sourceTree = "<group>"; };
 		0E0EB5651D238D49000B5C0D /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
-		0E0EB56B1D24CA73000B5C0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCreacionTurnosViewController.swift; sourceTree = "<group>"; };
-		0E0EB56F1D24D442000B5C0D /* TurnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TurnView.swift; sourceTree = "<group>"; };
-		0E146A351D3DE9FE0092E260 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMMainViewController.swift; sourceTree = "<group>"; };
-		0E282A7B1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fecha+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		0E282A7C1D2DFCD100DB300C /* Fecha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fecha.swift; sourceTree = "<group>"; };
-		0E282A7D1D2DFCD100DB300C /* Turno+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Turno+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		0E282A7E1D2DFCD100DB300C /* Turno.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Turno.swift; sourceTree = "<group>"; };
-		0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMCalendarViewController.swift; sourceTree = "<group>"; };
-		0E456C511D2B7D8B00855FD1 /* EPCalendarPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarPicker.swift; sourceTree = "<group>"; };
-		0E456C521D2B7D8B00855FD1 /* EPCalendarConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarConstants.swift; sourceTree = "<group>"; };
-		0E456C531D2B7D8B00855FD1 /* EPCalendarCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarCell1.swift; sourceTree = "<group>"; };
-		0E456C541D2B7D8B00855FD1 /* EPCalendarCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EPCalendarCell1.xib; sourceTree = "<group>"; };
-		0E456C551D2B7D8B00855FD1 /* EPCalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPCalendarHeaderView.swift; sourceTree = "<group>"; };
-		0E456C561D2B7D8B00855FD1 /* EPCalendarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EPCalendarHeaderView.xib; sourceTree = "<group>"; };
-		0E456C571D2B7D8B00855FD1 /* EPExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPExtensions.swift; sourceTree = "<group>"; };
-		0E456C5F1D2B824E00855FD1 /* CalendarBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarBrain.swift; sourceTree = "<group>"; };
-		0E46ED5D1D281B9C00016E30 /* GuardiasMIP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GuardiasMIP-Bridging-Header.h"; sourceTree = "<group>"; };
-		0E46ED5E1D281B9D00016E30 /* UIColor+customProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+customProperties.h"; sourceTree = "<group>"; };
-		0E46ED5F1D281B9D00016E30 /* UIColor+customProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+customProperties.m"; sourceTree = "<group>"; };
-		0E46ED611D28232E00016E30 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
-		0E62862F1D2CC450002AB31B /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		0E8C4EE01D401072006E687A /* GMSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMSettingsViewController.swift; sourceTree = "<group>"; };
 		0E8CF1141D20D77200B788BA /* GuardiasMIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuardiasMIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CF1171D20D77200B788BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E8CF1191D20D77200B788BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,29 +75,7 @@
 		0E8CF1361D20D77200B788BA /* GuardiasMIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuardiasMIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8CF13A1D20D77200B788BA /* GuardiasMIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardiasMIPUITests.swift; sourceTree = "<group>"; };
 		0E8CF13C1D20D77200B788BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E8D00DA1D2F7BC10086D5BF /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
-		0E8D00DB1D2F7BC10086D5BF /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
-		0E8D00DD1D2F7BD90086D5BF /* CustomPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPicker.h; sourceTree = "<group>"; };
-		0E8D00DE1D2F7BD90086D5BF /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
-		0E8D00DF1D2F7BD90086D5BF /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
-		0E8D00E01D2F7BD90086D5BF /* CustomPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPickerViewController.xib; sourceTree = "<group>"; };
-		0E8D00E11D2F7BD90086D5BF /* CustomDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomDatePickerViewController.h; sourceTree = "<group>"; };
-		0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomDatePickerViewController.m; sourceTree = "<group>"; };
-		0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomDatePickerViewController.xib; sourceTree = "<group>"; };
-		0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDeViewController.swift; sourceTree = "<group>"; };
-		0EB11F031E5A274E0080C5FB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
-		0EE344581D2E2D9E00BD2F55 /* ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicator.h; sourceTree = "<group>"; };
-		0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicator.m; sourceTree = "<group>"; };
-		5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardiasMIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		69C39BDDADD779CB7CF4034A /* Pods-GuardiasMIPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPTests/Pods-GuardiasMIPTests.release.xcconfig"; sourceTree = "<group>"; };
-		74B9614F963C22C0B4905341 /* Pods_GuardiasMIPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardiasMIPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79C6218DC9E4C33DBEF57DF4 /* Pods-GuardiasMIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIP/Pods-GuardiasMIP.debug.xcconfig"; sourceTree = "<group>"; };
-		856B02603C14EC473161EC9D /* Pods-GuardiasMIPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPTests/Pods-GuardiasMIPTests.debug.xcconfig"; sourceTree = "<group>"; };
-		98E0CCEDD323747E12C9CE43 /* Pods-GuardiasMIPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPUITests/Pods-GuardiasMIPUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9CC5F038135F1077DE70EA9E /* Pods-GuardiasMIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIP.release.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIP/Pods-GuardiasMIP.release.xcconfig"; sourceTree = "<group>"; };
-		A201C40D9CD7AA5ABEEBB459 /* Pods-GuardiasMIPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardiasMIPUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GuardiasMIPUITests/Pods-GuardiasMIPUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D61192C4D7D283D1A29AC55E /* Pods_GuardiasMIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuardiasMIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E8CF1481D20D8E800B788BA /* BlurredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,9 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E146A361D3DE9FE0092E260 /* UserNotifications.framework in Frameworks */,
-				0E0EB56C1D24CA73000B5C0D /* CoreData.framework in Frameworks */,
-				38C7DCB31979700543820733 /* Pods_GuardiasMIP.framework in Frameworks */,
+				0E0EB5581D2382FA000B5C0D /* EasyPickerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F766EBBAC079D2B7FB61DC7 /* Pods_GuardiasMIPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22212435CF70BD2FE95F0F3B /* Pods_GuardiasMIPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,49 +107,10 @@
 		0E0EB55A1D2383F6000B5C0D /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				0E8D00D91D2F7BA10086D5BF /* EasyPickerKit */,
-				0E8D00D81D2F7B940086D5BF /* SuperCoreData */,
-				0E62862F1D2CC450002AB31B /* ColorExtension.swift */,
-				0E62862E1D2CA873002AB31B /* Calendar */,
-				0E46ED5E1D281B9D00016E30 /* UIColor+customProperties.h */,
-				0E46ED5F1D281B9D00016E30 /* UIColor+customProperties.m */,
 				0E0EB55B1D2384B6000B5C0D /* DateUtilities.swift */,
 				0E0EB5651D238D49000B5C0D /* MenuButton.swift */,
-				0E0EB56F1D24D442000B5C0D /* TurnView.swift */,
-				0E46ED5D1D281B9C00016E30 /* GuardiasMIP-Bridging-Header.h */,
-				0E46ED611D28232E00016E30 /* UIViewExtensions.swift */,
-				0E456C5F1D2B824E00855FD1 /* CalendarBrain.swift */,
-				0EE344581D2E2D9E00BD2F55 /* ActivityIndicator.h */,
-				0EE344591D2E2D9E00BD2F55 /* ActivityIndicator.m */,
-				0EE344561D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift */,
-				0EB11F031E5A274E0080C5FB /* Constants.swift */,
 			);
 			name = Lib;
-			sourceTree = "<group>";
-		};
-		0E0EB5711D25F3A5000B5C0D /* Modelos */ = {
-			isa = PBXGroup;
-			children = (
-				0E282A7B1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift */,
-				0E282A7C1D2DFCD100DB300C /* Fecha.swift */,
-				0E282A7D1D2DFCD100DB300C /* Turno+CoreDataProperties.swift */,
-				0E282A7E1D2DFCD100DB300C /* Turno.swift */,
-			);
-			name = Modelos;
-			sourceTree = "<group>";
-		};
-		0E62862E1D2CA873002AB31B /* Calendar */ = {
-			isa = PBXGroup;
-			children = (
-				0E456C511D2B7D8B00855FD1 /* EPCalendarPicker.swift */,
-				0E456C521D2B7D8B00855FD1 /* EPCalendarConstants.swift */,
-				0E456C531D2B7D8B00855FD1 /* EPCalendarCell1.swift */,
-				0E456C541D2B7D8B00855FD1 /* EPCalendarCell1.xib */,
-				0E456C551D2B7D8B00855FD1 /* EPCalendarHeaderView.swift */,
-				0E456C561D2B7D8B00855FD1 /* EPCalendarHeaderView.xib */,
-				0E456C571D2B7D8B00855FD1 /* EPExtensions.swift */,
-			);
-			name = Calendar;
 			sourceTree = "<group>";
 		};
 		0E8CF10B1D20D77200B788BA = {
@@ -234,8 +120,6 @@
 				0E8CF12E1D20D77200B788BA /* GuardiasMIPTests */,
 				0E8CF1391D20D77200B788BA /* GuardiasMIPUITests */,
 				0E8CF1151D20D77200B788BA /* Products */,
-				22A38F5C53B7B04212F005D0 /* Pods */,
-				F8CB8BFD47F9F57BE05FC391 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,15 +136,17 @@
 		0E8CF1161D20D77200B788BA /* GuardiasMIP */ = {
 			isa = PBXGroup;
 			children = (
-				0E0EB5711D25F3A5000B5C0D /* Modelos */,
 				0E0EB55A1D2383F6000B5C0D /* Lib */,
 				0E8CF1171D20D77200B788BA /* AppDelegate.swift */,
-				0EE2F7C81D3DD6A600AFB145 /* Controllers */,
+				0E8CF1191D20D77200B788BA /* ViewController.swift */,
 				0E8CF11B1D20D77200B788BA /* Main.storyboard */,
 				0E8CF1211D20D77200B788BA /* Assets.xcassets */,
 				0E8CF1231D20D77200B788BA /* LaunchScreen.storyboard */,
 				0E8CF1261D20D77200B788BA /* Info.plist */,
 				0E8CF11E1D20D77200B788BA /* GuardiasMIP.xcdatamodeld */,
+				0E0EB5611D238BD7000B5C0D /* Turno+CoreDataProperties.swift */,
+				0E0EB5621D238BD7000B5C0D /* Turno.swift */,
+				0E8CF1481D20D8E800B788BA /* BlurredView.swift */,
 				0E8CF14C1D20E2BD00B788BA /* Frameworks */,
 			);
 			path = GuardiasMIP;
@@ -287,99 +173,7 @@
 		0E8CF14C1D20E2BD00B788BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0E0EB56B1D24CA73000B5C0D /* CoreData.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		0E8D00D81D2F7B940086D5BF /* SuperCoreData */ = {
-			isa = PBXGroup;
-			children = (
-				0E8D00DA1D2F7BC10086D5BF /* CoreDataHelper.h */,
-				0E8D00DB1D2F7BC10086D5BF /* CoreDataHelper.m */,
-			);
-			name = SuperCoreData;
-			sourceTree = "<group>";
-		};
-		0E8D00D91D2F7BA10086D5BF /* EasyPickerKit */ = {
-			isa = PBXGroup;
-			children = (
-				0E8D00DD1D2F7BD90086D5BF /* CustomPicker.h */,
-				0E8D00DE1D2F7BD90086D5BF /* CustomPickerViewController.h */,
-				0E8D00DF1D2F7BD90086D5BF /* CustomPickerViewController.m */,
-				0E8D00E01D2F7BD90086D5BF /* CustomPickerViewController.xib */,
-				0E8D00E11D2F7BD90086D5BF /* CustomDatePickerViewController.h */,
-				0E8D00E21D2F7BD90086D5BF /* CustomDatePickerViewController.m */,
-				0E8D00E61D2F7CA80086D5BF /* CustomDatePickerViewController.xib */,
-			);
-			name = EasyPickerKit;
-			sourceTree = "<group>";
-		};
-		0EE2F7C41D3DD63B00AFB145 /* Creacion De Turnos */ = {
-			isa = PBXGroup;
-			children = (
-				0E0EB56D1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift */,
-			);
-			name = "Creacion De Turnos";
-			sourceTree = "<group>";
-		};
-		0EE2F7C51D3DD65800AFB145 /* Calendario Actual */ = {
-			isa = PBXGroup;
-			children = (
-				0E456C4F1D2B7AB500855FD1 /* GMCalendarViewController.swift */,
-			);
-			name = "Calendario Actual";
-			sourceTree = "<group>";
-		};
-		0EE2F7C61D3DD67E00AFB145 /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				0E282A791D2CDDAE00DB300C /* GMMainViewController.swift */,
-			);
-			name = Menu;
-			sourceTree = "<group>";
-		};
-		0EE2F7C71D3DD69800AFB145 /* Seleccion de Fechas */ = {
-			isa = PBXGroup;
-			children = (
-				0E8CF1191D20D77200B788BA /* ViewController.swift */,
-			);
-			name = "Seleccion de Fechas";
-			sourceTree = "<group>";
-		};
-		0EE2F7C81D3DD6A600AFB145 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0EE2F7C71D3DD69800AFB145 /* Seleccion de Fechas */,
-				0EE2F7C61D3DD67E00AFB145 /* Menu */,
-				0EE2F7C51D3DD65800AFB145 /* Calendario Actual */,
-				0EE2F7C41D3DD63B00AFB145 /* Creacion De Turnos */,
-				0EA6E4641D400F6300A39659 /* AcercaDeViewController.swift */,
-				0E8C4EE01D401072006E687A /* GMSettingsViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		22A38F5C53B7B04212F005D0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				79C6218DC9E4C33DBEF57DF4 /* Pods-GuardiasMIP.debug.xcconfig */,
-				9CC5F038135F1077DE70EA9E /* Pods-GuardiasMIP.release.xcconfig */,
-				856B02603C14EC473161EC9D /* Pods-GuardiasMIPTests.debug.xcconfig */,
-				69C39BDDADD779CB7CF4034A /* Pods-GuardiasMIPTests.release.xcconfig */,
-				A201C40D9CD7AA5ABEEBB459 /* Pods-GuardiasMIPUITests.debug.xcconfig */,
-				98E0CCEDD323747E12C9CE43 /* Pods-GuardiasMIPUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F8CB8BFD47F9F57BE05FC391 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0E146A351D3DE9FE0092E260 /* UserNotifications.framework */,
-				D61192C4D7D283D1A29AC55E /* Pods_GuardiasMIP.framework */,
-				74B9614F963C22C0B4905341 /* Pods_GuardiasMIPTests.framework */,
-				5DF625263AF051A875B98FDC /* Pods_GuardiasMIPUITests.framework */,
+				0E0EB5561D2382F0000B5C0D /* EasyPickerKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -391,13 +185,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E8CF13F1D20D77200B788BA /* Build configuration list for PBXNativeTarget "GuardiasMIP" */;
 			buildPhases = (
-				211AD9E5991BE2BAF0FA7424 /* [CP] Check Pods Manifest.lock */,
 				0E8CF1101D20D77200B788BA /* Sources */,
 				0E8CF1111D20D77200B788BA /* Frameworks */,
 				0E8CF1121D20D77200B788BA /* Resources */,
 				0E8CF1511D20E32F00B788BA /* Embed Frameworks */,
-				7F24213A3C6F3525C8D4DB8E /* [CP] Embed Pods Frameworks */,
-				5F1203204C1466D2E4D7F112 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -412,12 +203,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E8CF1421D20D77200B788BA /* Build configuration list for PBXNativeTarget "GuardiasMIPTests" */;
 			buildPhases = (
-				E25F72C8745F8D9DAC958D9D /* [CP] Check Pods Manifest.lock */,
 				0E8CF1271D20D77200B788BA /* Sources */,
 				0E8CF1281D20D77200B788BA /* Frameworks */,
 				0E8CF1291D20D77200B788BA /* Resources */,
-				C96D5883F30E39782D154663 /* [CP] Embed Pods Frameworks */,
-				3D56305162837AA6F10027C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -433,11 +221,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E8CF1451D20D77200B788BA /* Build configuration list for PBXNativeTarget "GuardiasMIPUITests" */;
 			buildPhases = (
-				76047414AA929BF6A2D925B0 /* [CP] Check Pods Manifest.lock */,
 				0E8CF1321D20D77200B788BA /* Sources */,
 				0E8CF1331D20D77200B788BA /* Frameworks */,
 				0E8CF1341D20D77200B788BA /* Resources */,
-				A2248C6483904CC65AD31C10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -461,18 +247,13 @@
 				TargetAttributes = {
 					0E8CF1131D20D77200B788BA = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 49VFMFM852;
-						LastSwiftMigration = 0800;
-						ProvisioningStyle = Automatic;
 					};
 					0E8CF12A1D20D77200B788BA = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
 						TestTargetID = 0E8CF1131D20D77200B788BA;
 					};
 					0E8CF1351D20D77200B788BA = {
 						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
 						TestTargetID = 0E8CF1131D20D77200B788BA;
 					};
 				};
@@ -502,13 +283,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E8D00E71D2F7CA80086D5BF /* CustomDatePickerViewController.xib in Resources */,
-				0E456C5B1D2B7D8B00855FD1 /* EPCalendarCell1.xib in Resources */,
 				0E8CF1251D20D77200B788BA /* LaunchScreen.storyboard in Resources */,
 				0E8CF1221D20D77200B788BA /* Assets.xcassets in Resources */,
-				0E8D00E41D2F7BD90086D5BF /* CustomPickerViewController.xib in Resources */,
 				0E8CF11D1D20D77200B788BA /* Main.storyboard in Resources */,
-				0E456C5D1D2B7D8B00855FD1 /* EPCalendarHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,164 +305,19 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		211AD9E5991BE2BAF0FA7424 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3D56305162837AA6F10027C4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuardiasMIPTests/Pods-GuardiasMIPTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5F1203204C1466D2E4D7F112 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuardiasMIP/Pods-GuardiasMIP-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		76047414AA929BF6A2D925B0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7F24213A3C6F3525C8D4DB8E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuardiasMIP/Pods-GuardiasMIP-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2248C6483904CC65AD31C10 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuardiasMIPUITests/Pods-GuardiasMIPUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C96D5883F30E39782D154663 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GuardiasMIPTests/Pods-GuardiasMIPTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E25F72C8745F8D9DAC958D9D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		0E8CF1101D20D77200B788BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E456C591D2B7D8B00855FD1 /* EPCalendarConstants.swift in Sources */,
-				0E282A7A1D2CDDAE00DB300C /* GMMainViewController.swift in Sources */,
-				0E282A7F1D2DFCD100DB300C /* Fecha+CoreDataProperties.swift in Sources */,
-				0E46ED621D28232E00016E30 /* UIViewExtensions.swift in Sources */,
 				0E8CF11A1D20D77200B788BA /* ViewController.swift in Sources */,
-				0EB11F041E5A274E0080C5FB /* Constants.swift in Sources */,
+				0E0EB5641D238BD7000B5C0D /* Turno.swift in Sources */,
 				0E8CF1201D20D77200B788BA /* GuardiasMIP.xcdatamodeld in Sources */,
-				0E8D00E51D2F7BD90086D5BF /* CustomDatePickerViewController.m in Sources */,
 				0E8CF1181D20D77200B788BA /* AppDelegate.swift in Sources */,
-				0E8D00E31D2F7BD90086D5BF /* CustomPickerViewController.m in Sources */,
 				0E0EB5661D238D49000B5C0D /* MenuButton.swift in Sources */,
-				0EE3445A1D2E2D9E00BD2F55 /* ActivityIndicator.m in Sources */,
 				0E0EB55C1D2384B6000B5C0D /* DateUtilities.swift in Sources */,
-				0E282A801D2DFCD100DB300C /* Fecha.swift in Sources */,
-				0E282A821D2DFCD100DB300C /* Turno.swift in Sources */,
-				0E456C5C1D2B7D8B00855FD1 /* EPCalendarHeaderView.swift in Sources */,
-				0E46ED601D281B9D00016E30 /* UIColor+customProperties.m in Sources */,
-				0E8C4EE11D401072006E687A /* GMSettingsViewController.swift in Sources */,
-				0E456C581D2B7D8B00855FD1 /* EPCalendarPicker.swift in Sources */,
-				0E456C5E1D2B7D8B00855FD1 /* EPExtensions.swift in Sources */,
-				0EA6E4651D400F6300A39659 /* AcercaDeViewController.swift in Sources */,
-				0E0EB56E1D24CC1B000B5C0D /* GMCreacionTurnosViewController.swift in Sources */,
-				0EE344571D2E2CBF00BD2F55 /* ActivityIndicatorViewController.swift in Sources */,
-				0E8D00DC1D2F7BC10086D5BF /* CoreDataHelper.m in Sources */,
-				0E456C501D2B7AB500855FD1 /* GMCalendarViewController.swift in Sources */,
-				0E282A811D2DFCD100DB300C /* Turno+CoreDataProperties.swift in Sources */,
-				0E0EB5701D24D442000B5C0D /* TurnView.swift in Sources */,
-				0E456C601D2B824E00855FD1 /* CalendarBrain.swift in Sources */,
-				0E456C5A1D2B7D8B00855FD1 /* EPCalendarCell1.swift in Sources */,
-				0E6286301D2CC450002AB31B /* ColorExtension.swift in Sources */,
+				0E0EB5631D238BD7000B5C0D /* Turno+CoreDataProperties.swift in Sources */,
+				0E8CF1491D20D8E800B788BA /* BlurredView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -827,107 +459,76 @@
 		};
 		0E8CF1401D20D77200B788BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79C6218DC9E4C33DBEF57DF4 /* Pods-GuardiasMIP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ernesto Sanchez Kuri (49VFMFM852)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GuardiasMIP",
-					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GuardiasMIP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.guardiasmip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "GuardiasMIP/GuardiasMIP-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
 		0E8CF1411D20D77200B788BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CC5F038135F1077DE70EA9E /* Pods-GuardiasMIP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ernesto Sanchez Kuri (49VFMFM852)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
-				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GuardiasMIP",
-					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = GuardiasMIP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.guardiasmip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "GuardiasMIP/GuardiasMIP-Bridging-Header.h";
-				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
 		0E8CF1431D20D77200B788BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 856B02603C14EC473161EC9D /* Pods-GuardiasMIPTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GuardiasMIPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuardiasMIP.app/GuardiasMIP";
 			};
 			name = Debug;
 		};
 		0E8CF1441D20D77200B788BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 69C39BDDADD779CB7CF4034A /* Pods-GuardiasMIPTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GuardiasMIPTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuardiasMIP.app/GuardiasMIP";
 			};
 			name = Release;
 		};
 		0E8CF1461D20D77200B788BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A201C40D9CD7AA5ABEEBB459 /* Pods-GuardiasMIPUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GuardiasMIPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = GuardiasMIP;
 			};
 			name = Debug;
 		};
 		0E8CF1471D20D77200B788BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98E0CCEDD323747E12C9CE43 /* Pods-GuardiasMIPUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GuardiasMIPUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sankurapps.GuardiasMIPUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = GuardiasMIP;
 			};
 			name = Release;

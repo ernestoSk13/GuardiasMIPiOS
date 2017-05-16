@@ -1,1 +1,0 @@
-# GuardiasMIPiOS v 1.0
